@@ -1,5 +1,7 @@
 import './features-gallery.module.css';
 
+import Image from 'next/image';
+
 import AboutGrid01 from '../assets/about-grid-01.jpg';
 import AboutGrid02 from '../assets/about-grid-02.jpg';
 import AboutGrid03 from '../assets/about-grid-03.jpg';
@@ -141,7 +143,7 @@ export function FeaturesGallery(props: FeaturesGalleryProps) {
             className="grid grid-cols-12 gap-3 mt-12 md:mt-20"
             data-aos-id-gallery
           >
-            <img
+            <Image
               className="col-span-4"
               src={AboutGrid01}
               width="360"
@@ -150,7 +152,7 @@ export function FeaturesGallery(props: FeaturesGalleryProps) {
               data-aos="fade-down"
               data-aos-anchor="[data-aos-id-gallery]"
             />
-            <img
+            <Image
               className="col-span-3"
               src={AboutGrid02}
               width="270"
@@ -160,7 +162,7 @@ export function FeaturesGallery(props: FeaturesGalleryProps) {
               data-aos-anchor="[data-aos-id-gallery]"
               data-aos-delay="100"
             />
-            <img
+            <Image
               className="col-span-5"
               src={AboutGrid03}
               width="450"
@@ -170,7 +172,7 @@ export function FeaturesGallery(props: FeaturesGalleryProps) {
               data-aos-anchor="[data-aos-id-gallery]"
               data-aos-delay="200"
             />
-            <img
+            <Image
               className="col-span-3"
               src={AboutGrid04}
               width="270"
@@ -180,7 +182,7 @@ export function FeaturesGallery(props: FeaturesGalleryProps) {
               data-aos-anchor="[data-aos-id-gallery]"
               data-aos-delay="300"
             />
-            <img
+            <Image
               className="col-span-5"
               src={AboutGrid05}
               width="450"
@@ -190,7 +192,7 @@ export function FeaturesGallery(props: FeaturesGalleryProps) {
               data-aos-anchor="[data-aos-id-gallery]"
               data-aos-delay="400"
             />
-            <img
+            <Image
               className="col-span-4"
               src={AboutGrid06}
               width="360"

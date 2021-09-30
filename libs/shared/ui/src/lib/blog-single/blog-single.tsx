@@ -5,6 +5,7 @@ import NewsAuthor01 from '../assets/news-author-01.jpg';
 import NewsInnerImage from '../assets/news-inner-image.jpg';
 import NewsInnerImageLeft from '../assets/news-inner-image-left.jpg';
 import Link from 'next/link';
+import Image from 'next/image';
 
 /* eslint-disable-next-line */
 export interface BlogSingleProps {}
@@ -14,7 +15,7 @@ export function BlogSingle(props: BlogSingleProps) {
     <section className="relative">
       {/* Background image */}
       <div className="box-content absolute inset-0 pt-16 h-128">
-        <img
+        <Image
           className="absolute inset-0 object-cover w-full h-full opacity-25"
           src={HeroBg}
           width="1440"
@@ -61,7 +62,7 @@ export function BlogSingle(props: BlogSingleProps) {
                   >
                     <Link href="#0" passHref>
                       <a>
-                        <img
+                        <Image
                           className="flex-shrink-0 mr-3 rounded-full"
                           src={NewsAuthor01}
                           width="32"
@@ -118,7 +119,7 @@ export function BlogSingle(props: BlogSingleProps) {
                   venenatis a condimentum vitae sapien?
                 </p>
                 <figure className="mb-8">
-                  <img
+                  <Image
                     className="w-full"
                     src={NewsInnerImage}
                     width="768"
@@ -185,7 +186,7 @@ export function BlogSingle(props: BlogSingleProps) {
                   mi tempus imperdiet nulla.
                 </p>
                 <figure className="mb-8 md:float-left md:max-w-sm md:mr-8 lg:max-w-none lg:-ml-32">
-                  <img
+                  <Image
                     className="mx-auto"
                     src={NewsInnerImageLeft}
                     width="480"

@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import './tabs.module.css';
 
+import Image from 'next/image';
+
 import VideoThumb from '../assets/video-thumb.jpg';
 import PlayButton from '../assets/play-button.svg';
 
@@ -201,7 +203,7 @@ export function Tabs(props: TabsProps) {
                     className={['1'].includes(category) ? undefined : 'hidden'}
                   >
                     <div className="relative">
-                      <img
+                      <Image
                         className="w-full"
                         src={VideoThumb}
                         width="352"
@@ -214,7 +216,7 @@ export function Tabs(props: TabsProps) {
                             className="transition duration-150 ease-in-out hover:opacity-75"
                             href="#0"
                           >
-                            <img
+                            <Image
                               src={PlayButton}
                               width="72"
                               height="72"
@@ -242,7 +244,7 @@ export function Tabs(props: TabsProps) {
                     }
                   >
                     <div className="relative flex items-center justify-center">
-                      <img
+                      <Image
                         className="w-full"
                         src={VideoThumb}
                         width="352"
@@ -255,7 +257,7 @@ export function Tabs(props: TabsProps) {
                             className="transition duration-150 ease-in-out hover:opacity-75"
                             href="#0"
                           >
-                            <img
+                            <Image
                               src={PlayButton}
                               width="72"
                               height="72"
@@ -283,7 +285,7 @@ export function Tabs(props: TabsProps) {
                     }
                   >
                     <div className="relative flex items-center justify-center shadow">
-                      <img
+                      <Image
                         className="w-full"
                         src={VideoThumb}
                         width="352"
@@ -296,7 +298,7 @@ export function Tabs(props: TabsProps) {
                             className="transition duration-150 ease-in-out hover:opacity-75"
                             href="#0"
                           >
-                            <img
+                            <Image
                               src={PlayButton}
                               width="72"
                               height="72"
@@ -324,7 +326,7 @@ export function Tabs(props: TabsProps) {
                     }
                   >
                     <div className="relative flex items-center justify-center shadow">
-                      <img
+                      <Image
                         className="w-full"
                         src={VideoThumb}
                         width="352"
@@ -337,7 +339,7 @@ export function Tabs(props: TabsProps) {
                             className="transition duration-150 ease-in-out hover:opacity-75"
                             href="#0"
                           >
-                            <img
+                            <Image
                               src={PlayButton}
                               width="72"
                               height="72"
@@ -365,7 +367,7 @@ export function Tabs(props: TabsProps) {
                     }
                   >
                     <div className="relative flex items-center justify-center shadow">
-                      <img
+                      <Image
                         className="w-full"
                         src={VideoThumb}
                         width="352"
@@ -378,7 +380,7 @@ export function Tabs(props: TabsProps) {
                             className="transition duration-150 ease-in-out hover:opacity-75"
                             href="#0"
                           >
-                            <img
+                            <Image
                               src={PlayButton}
                               width="72"
                               height="72"
@@ -406,7 +408,7 @@ export function Tabs(props: TabsProps) {
                     }
                   >
                     <div className="relative flex items-center justify-center shadow">
-                      <img
+                      <Image
                         className="w-full"
                         src={VideoThumb}
                         width="352"
@@ -419,7 +421,7 @@ export function Tabs(props: TabsProps) {
                             className="transition duration-150 ease-in-out hover:opacity-75"
                             href="#0"
                           >
-                            <img
+                            <Image
                               src={PlayButton}
                               width="72"
                               height="72"
@@ -447,7 +449,7 @@ export function Tabs(props: TabsProps) {
                     }
                   >
                     <div className="relative flex items-center justify-center shadow">
-                      <img
+                      <Image
                         className="w-full"
                         src={VideoThumb}
                         width="352"
@@ -460,7 +462,7 @@ export function Tabs(props: TabsProps) {
                             className="transition duration-150 ease-in-out hover:opacity-75"
                             href="#0"
                           >
-                            <img
+                            <Image
                               src={PlayButton}
                               width="72"
                               height="72"
@@ -488,7 +490,7 @@ export function Tabs(props: TabsProps) {
                     }
                   >
                     <div className="relative flex items-center justify-center shadow">
-                      <img
+                      <Image
                         className="w-full"
                         src={VideoThumb}
                         width="352"
@@ -501,7 +503,7 @@ export function Tabs(props: TabsProps) {
                             className="transition duration-150 ease-in-out hover:opacity-75"
                             href="#0"
                           >
-                            <img
+                            <Image
                               src={PlayButton}
                               width="72"
                               height="72"
@@ -527,7 +529,7 @@ export function Tabs(props: TabsProps) {
                     className={['5'].includes(category) ? undefined : 'hidden'}
                   >
                     <div className="relative flex items-center justify-center shadow">
-                      <img
+                      <Image
                         className="w-full"
                         src={VideoThumb}
                         width="352"
@@ -540,7 +542,7 @@ export function Tabs(props: TabsProps) {
                             className="transition duration-150 ease-in-out hover:opacity-75"
                             href="#0"
                           >
-                            <img
+                            <Image
                               src={PlayButton}
                               width="72"
                               height="72"
@@ -566,7 +568,7 @@ export function Tabs(props: TabsProps) {
                     className={['5'].includes(category) ? undefined : 'hidden'}
                   >
                     <div className="relative flex items-center justify-center shadow">
-                      <img
+                      <Image
                         className="w-full"
                         src={VideoThumb}
                         width="352"
@@ -579,7 +581,7 @@ export function Tabs(props: TabsProps) {
                             className="transition duration-150 ease-in-out hover:opacity-75"
                             href="#0"
                           >
-                            <img
+                            <Image
                               src={PlayButton}
                               width="72"
                               height="72"

@@ -1,6 +1,10 @@
 import { useState } from 'react';
 import './testimonials-circles.module.css';
 
+import Image from 'next/image';
+
+import UserOne from '../assets/user-1.jpg';
+
 /* eslint-disable-next-line */
 export interface TestimonialsCirclesProps {}
 
@@ -168,9 +172,11 @@ export function TestimonialsCircles(props: TestimonialsCirclesProps) {
     },
   ]);
 
+  //(await import(`../assets/user-${index + 1}.jpg`)).default
+
   return (
     <section>
-      <div className="max-w-3xl mx-auto px-4 sm:px-6">
+      <div className="max-w-3xl px-4 mx-auto sm:px-6">
         <div className="pb-12 md:pb-20">
           <div className="relative">
             {/* Background image */}
@@ -220,14 +226,13 @@ export function TestimonialsCircles(props: TestimonialsCirclesProps) {
                 />
               </g>
             </svg>
-
             {/* People pics */}
             {items.map((item, index) => (
-              <img
+              <Image
                 key={index}
-                className="absolute rounded-full z-10 animate-float"
-                style={item.style}
-                src={require(`../images//user-${index + 1}.jpg`).default}
+                className="absolute z-10 rounded-full animate-float"
+                css={item.style}
+                src={UserOne}
                 width={item.size}
                 height={item.size}
                 alt={`User ${index + 1}`}
@@ -238,14 +243,13 @@ export function TestimonialsCircles(props: TestimonialsCirclesProps) {
                 onMouseLeave={() => setCommentOn(false)}
               />
             ))}
-
             {/* Comment box */}
             <div
               className={`opacity-0 transition duration-150 ease-in-out absolute top-0 left-1/2 transform -translate-x-1/2 -mt-6 max-w-xs w-full p-3 bg-white dark:bg-gray-800 text-center shadow-2xl z-20 pointer-events-none ${
                 commentOn && 'opacity-100'
               }`}
             >
-              <div className="text-gray-600 dark:text-gray-400 mb-1">
+              <div className="mb-1 text-gray-600 dark:text-gray-400">
                 {items[active].comment}
               </div>
               <div className="text-sm font-bold text-gray-800 dark:text-gray-100">

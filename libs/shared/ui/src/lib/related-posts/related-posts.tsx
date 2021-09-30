@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import './related-posts.module.css';
 
 import RelatedPost01 from '../assets/related-post-01.jpg';
@@ -29,7 +30,7 @@ export function RelatedPosts(props: RelatedPostsProps) {
                 data-aos-anchor="[data-aos-id-relposts]"
               >
                 <figure>
-                  <img
+                  <Image
                     className="absolute inset-0 object-cover w-full h-full transition duration-700 ease-out opacity-50 group-hover:opacity-75"
                     src={RelatedPost01}
                     width="372"
@@ -57,7 +58,7 @@ export function RelatedPosts(props: RelatedPostsProps) {
                     <div className="flex items-center mt-5 text-sm">
                       <Link href="#0" passHref>
                         <a>
-                          <img
+                          <Image
                             className="flex-shrink-0 mr-3 rounded-full"
                             src={NewsAuthor04}
                             width="32"
@@ -85,7 +86,7 @@ export function RelatedPosts(props: RelatedPostsProps) {
                 data-aos-delay="200"
               >
                 <figure>
-                  <img
+                  <Image
                     className="absolute inset-0 object-cover w-full h-full transition duration-700 ease-out opacity-50 group-hover:opacity-75"
                     src={RelatedPost02}
                     width="372"
@@ -114,7 +115,7 @@ export function RelatedPosts(props: RelatedPostsProps) {
                     <div className="flex items-center mt-5 text-sm">
                       <Link href="#0" passHref>
                         <a>
-                          <img
+                          <Image
                             className="flex-shrink-0 mr-3 rounded-full"
                             src={NewsAuthor03}
                             width="32"

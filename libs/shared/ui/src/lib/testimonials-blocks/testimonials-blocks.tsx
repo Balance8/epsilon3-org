@@ -1,5 +1,7 @@
 import './testimonials-blocks.module.css';
 
+import Image from 'next/image';
+
 import Testimonial01 from '../assets/testimonial-01.jpg';
 import Testimonial02 from '../assets/testimonial-02.jpg';
 import Testimonial03 from '../assets/testimonial-03.jpg';
@@ -18,7 +20,7 @@ export function TestimonialsBlocks(props: TestimonialsBlocksProps) {
             {/* 1st testimonial */}
             <div className="text-center">
               <div className="relative inline-flex flex-col mb-4">
-                <img
+                <Image
                   className="rounded-full"
                   src={Testimonial01}
                   width="56"
@@ -56,7 +58,7 @@ export function TestimonialsBlocks(props: TestimonialsBlocksProps) {
             {/* 2nd testimonial */}
             <div className="text-center">
               <div className="relative inline-flex flex-col mb-4">
-                <img
+                <Image
                   className="rounded-full"
                   src={Testimonial02}
                   width="56"
@@ -94,7 +96,7 @@ export function TestimonialsBlocks(props: TestimonialsBlocksProps) {
             {/* 3rd testimonial */}
             <div className="text-center">
               <div className="relative inline-flex flex-col mb-4">
-                <img
+                <Image
                   className="rounded-full"
                   src={Testimonial03}
                   width="56"
@@ -132,7 +134,7 @@ export function TestimonialsBlocks(props: TestimonialsBlocksProps) {
             {/* 4th testimonial */}
             <div className="text-center">
               <div className="relative inline-flex flex-col mb-4">
-                <img
+                <Image
                   className="rounded-full"
                   src={Testimonial04}
                   width="56"

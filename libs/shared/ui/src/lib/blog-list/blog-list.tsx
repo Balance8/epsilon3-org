@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import './blog-list.module.css';
 
 import News01 from '../assets/news-01.jpg';
@@ -38,7 +39,7 @@ export function BlogList(props: BlogListProps) {
                     <Link passHref href="/blog-post">
                       <a className="block mb-4">
                         <figure className="relative h-0 pb-9/16">
-                          <img
+                          <Image
                             className="absolute inset-0 object-cover w-full h-full"
                             src={News01}
                             width="352"
@@ -64,7 +65,7 @@ export function BlogList(props: BlogListProps) {
                   <footer className="flex items-center mt-4">
                     <Link href="#0" passHref>
                       <a>
-                        <img
+                        <Image
                           className="flex-shrink-0 mr-3 rounded-full"
                           src={NewsAuthor03}
                           width="32"
@@ -93,7 +94,7 @@ export function BlogList(props: BlogListProps) {
                     <Link passHref href="/blog-post">
                       <a className="block mb-4">
                         <figure className="relative h-0 pb-9/16">
-                          <img
+                          <Image
                             className="absolute inset-0 object-cover w-full h-full"
                             src={News02}
                             width="352"
@@ -119,7 +120,7 @@ export function BlogList(props: BlogListProps) {
                   <footer className="flex items-center mt-4">
                     <Link href="#0" passHref>
                       <a>
-                        <img
+                        <Image
                           className="flex-shrink-0 mr-3 rounded-full"
                           src={NewsAuthor06}
                           width="32"
@@ -147,7 +148,7 @@ export function BlogList(props: BlogListProps) {
                     <Link passHref href="/blog-post">
                       <a className="block mb-4">
                         <figure className="relative h-0 pb-9/16">
-                          <img
+                          <Image
                             className="absolute inset-0 object-cover w-full h-full"
                             src={News03}
                             width="352"
@@ -173,7 +174,7 @@ export function BlogList(props: BlogListProps) {
                   <footer className="flex items-center mt-4">
                     <Link href="#0" passHref>
                       <a>
-                        <img
+                        <Image
                           className="flex-shrink-0 mr-3 rounded-full"
                           src={NewsAuthor01}
                           width="32"
@@ -201,7 +202,7 @@ export function BlogList(props: BlogListProps) {
                     <Link passHref href="/blog-post">
                       <a className="block mb-4">
                         <figure className="relative h-0 pb-9/16">
-                          <img
+                          <Image
                             className="absolute inset-0 object-cover w-full h-full"
                             src={News04}
                             width="352"
@@ -227,7 +228,7 @@ export function BlogList(props: BlogListProps) {
                   <footer className="flex items-center mt-4">
                     <Link href="#0" passHref>
                       <a>
-                        <img
+                        <Image
                           className="flex-shrink-0 mr-3 rounded-full"
                           src={NewsAuthor03}
                           width="32"
@@ -255,7 +256,7 @@ export function BlogList(props: BlogListProps) {
                     <Link passHref href="/blog-post">
                       <a className="block mb-4">
                         <figure className="relative h-0 pb-9/16">
-                          <img
+                          <Image
                             className="absolute inset-0 object-cover w-full h-full"
                             src={News05}
                             width="352"
@@ -281,7 +282,7 @@ export function BlogList(props: BlogListProps) {
                   <footer className="flex items-center mt-4">
                     <Link href="#0" passHref>
                       <a>
-                        <img
+                        <Image
                           className="flex-shrink-0 mr-3 rounded-full"
                           src={NewsAuthor04}
                           width="32"
@@ -309,7 +310,7 @@ export function BlogList(props: BlogListProps) {
                     <Link passHref href="/blog-post">
                       <a className="block mb-4">
                         <figure className="relative h-0 pb-9/16">
-                          <img
+                          <Image
                             className="absolute inset-0 object-cover w-full h-full"
                             src={News01}
                             width="352"
@@ -335,7 +336,7 @@ export function BlogList(props: BlogListProps) {
                   <footer className="flex items-center mt-4">
                     <Link href="#0" passHref>
                       <a>
-                        <img
+                        <Image
                           className="flex-shrink-0 mr-3 rounded-full"
                           src={NewsAuthor05}
                           width="32"

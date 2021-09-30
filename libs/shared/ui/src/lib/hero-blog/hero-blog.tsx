@@ -1,8 +1,10 @@
 import Link from 'next/link';
+import Image from 'next/image';
+
 import './hero-blog.module.css';
 
 import HeroBg from '../assets/hero-bg.jpg';
-import Author01 from '../assets/author-01.jpg';
+import Author01 from '../assets/news-author-01.jpg';
 
 /* eslint-disable-next-line */
 export interface HeroBlogProps {}
@@ -12,7 +14,7 @@ export function HeroBlog(props: HeroBlogProps) {
     <section className="relative">
       {/* Background image */}
       <div className="box-content absolute inset-0 pt-16 h-128 -z-1">
-        <img
+        <Image
           className="absolute inset-0 object-cover w-full h-full opacity-25"
           src={HeroBg}
           width="1440"
@@ -52,7 +54,7 @@ export function HeroBlog(props: HeroBlogProps) {
                   <div className="flex items-center justify-center">
                     <Link href="#0" passHref>
                       <a>
-                        <img
+                        <Image
                           className="flex-shrink-0 mr-3 rounded-full"
                           src={Author01}
                           width="32"

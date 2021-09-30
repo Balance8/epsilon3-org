@@ -1,5 +1,7 @@
 import { useState } from 'react';
-import Modal from '../utils/Modal';
+import { Modal } from '@epsilon3-org/shared/utils';
+
+import Image from 'next/image';
 
 import MockupImage01 from '../assets/mockup-image-01.jpg';
 import iPhoneMockup from '../assets/iphone-mockup.png';
@@ -149,16 +151,16 @@ export function HeroHome(props: HeroHomeProps) {
                   </defs>
                 </svg>
                 {/* Image inside mockup size: 290x624px (or 580x1248px for Retina devices) */}
-                <img
+                <Image
                   className="absolute"
                   src={MockupImage01}
                   width="290"
                   height="624"
-                  style={{ maxWidth: '84.33%' }}
+                  css={{ maxWidth: '84.33%' }}
                   alt="Features illustration"
                 />
                 {/* iPhone mockup */}
-                <img
+                <Image
                   className="relative h-auto max-w-full mx-auto pointer-events-none md:mr-0 md:max-w-none"
                   src={iPhoneMockup}
                   width="344"
@@ -177,7 +179,7 @@ export function HeroHome(props: HeroHomeProps) {
                   }}
                   aria-controls="modal"
                 >
-                  <img src={PlayButton} width="96" height="96" alt="Play" />
+                  <Image src={PlayButton} width="96" height="96" alt="Play" />
                 </a>
               </div>
 

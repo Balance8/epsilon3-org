@@ -1,5 +1,7 @@
 import './career.module.css';
 
+import Image from 'next/image';
+
 import Career01 from '../assets/career-01.jpg';
 import Career02 from '../assets/career-02.jpg';
 import Career03 from '../assets/career-03.jpg';
@@ -40,7 +42,7 @@ export function Career(props: CareerProps) {
                 {/* 1st job item */}
                 <a className="block group" href="#0">
                   <div className="relative h-0 pb-9/16 sm:pb-1/1">
-                    <img
+                    <Image
                       className="absolute inset-0 object-cover w-full h-full"
                       src={Career01}
                       width="240"
@@ -64,7 +66,7 @@ export function Career(props: CareerProps) {
                 {/* 2nd job item */}
                 <a className="block group" href="#0">
                   <div className="relative h-0 pb-9/16 sm:pb-1/1">
-                    <img
+                    <Image
                       className="absolute inset-0 object-cover w-full h-full"
                       src={Career02}
                       width="240"
@@ -88,7 +90,7 @@ export function Career(props: CareerProps) {
                 {/* 3rd job item */}
                 <a className="block group" href="#0">
                   <div className="relative h-0 pb-9/16 sm:pb-1/1">
-                    <img
+                    <Image
                       className="absolute inset-0 object-cover w-full h-full"
                       src={Career03}
                       width="240"
@@ -112,7 +114,7 @@ export function Career(props: CareerProps) {
                 {/* 4th job item */}
                 <a className="block group" href="#0">
                   <div className="relative h-0 pb-9/16 sm:pb-1/1">
-                    <img
+                    <Image
                       className="absolute inset-0 object-cover w-full h-full"
                       src={Career04}
                       width="240"
@@ -136,7 +138,7 @@ export function Career(props: CareerProps) {
                 {/* 5th job item */}
                 <a className="block group" href="#0">
                   <div className="relative h-0 pb-9/16 sm:pb-1/1">
-                    <img
+                    <Image
                       className="absolute inset-0 object-cover w-full h-full"
                       src={Career05}
                       width="240"
@@ -160,7 +162,7 @@ export function Career(props: CareerProps) {
                 {/* 6th job item */}
                 <a className="block group" href="#0">
                   <div className="relative h-0 pb-9/16 sm:pb-1/1">
-                    <img
+                    <Image
                       className="absolute inset-0 object-cover w-full h-full"
                       src={Career06}
                       width="240"

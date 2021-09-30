@@ -8,6 +8,7 @@ import NewsAuthor03 from '../assets/news-author-03.jpg';
 import NewsAuthor04 from '../assets/news-author-04.jpg';
 import NewsAuthor05 from '../assets/news-author-05.jpg';
 import Link from 'next/link';
+import Image from 'next/image';
 
 /* eslint-disable-next-line */
 export interface HelpListProps {}
@@ -237,7 +238,7 @@ export function HelpList(props: HelpListProps) {
                           >
                             <span className="absolute inset-0 -m-px bg-white rounded-full dark:bg-gray-800"></span>
                           </span>
-                          <img
+                          <Image
                             className="relative rounded-full"
                             src={NewsAuthor01}
                             width="32"
@@ -318,7 +319,7 @@ export function HelpList(props: HelpListProps) {
                           >
                             <span className="absolute inset-0 -m-px bg-white rounded-full dark:bg-gray-800"></span>
                           </span>
-                          <img
+                          <Image
                             className="relative rounded-full"
                             src={NewsAuthor01}
                             width="32"
@@ -333,7 +334,7 @@ export function HelpList(props: HelpListProps) {
                           >
                             <span className="absolute inset-0 -m-px bg-white rounded-full dark:bg-gray-800"></span>
                           </span>
-                          <img
+                          <Image
                             className="relative rounded-full"
                             src={NewsAuthor02}
                             width="32"
@@ -418,7 +419,7 @@ export function HelpList(props: HelpListProps) {
                           >
                             <span className="absolute inset-0 -m-px bg-white rounded-full dark:bg-gray-800"></span>
                           </span>
-                          <img
+                          <Image
                             className="relative rounded-full"
                             src={NewsAuthor03}
                             width="32"
@@ -499,7 +500,7 @@ export function HelpList(props: HelpListProps) {
                           >
                             <span className="absolute inset-0 -m-px bg-white rounded-full dark:bg-gray-800"></span>
                           </span>
-                          <img
+                          <Image
                             className="relative rounded-full"
                             src={NewsAuthor04}
                             width="32"
@@ -580,7 +581,7 @@ export function HelpList(props: HelpListProps) {
                           >
                             <span className="absolute inset-0 -m-px bg-white rounded-full dark:bg-gray-800"></span>
                           </span>
-                          <img
+                          <Image
                             className="relative rounded-full"
                             src={NewsAuthor01}
                             width="32"
@@ -647,7 +648,7 @@ export function HelpList(props: HelpListProps) {
                           >
                             <span className="absolute inset-0 -m-px bg-white rounded-full dark:bg-gray-800"></span>
                           </span>
-                          <img
+                          <Image
                             className="relative rounded-full"
                             src={NewsAuthor05}
                             width="32"

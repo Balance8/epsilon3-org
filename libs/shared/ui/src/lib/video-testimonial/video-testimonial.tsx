@@ -1,5 +1,7 @@
 import { useState } from 'react';
-import Modal from '../utils/Modal';
+import { Modal } from '@epsilon3-org/shared/utils';
+
+import Image from 'next/image';
 
 import VideoTestimonialAsset from '../assets/video-testimonial.jpg';
 
@@ -18,7 +20,7 @@ export function VideoTestimonial(props: VideoTestimonialProps) {
           {/* Video image */}
           <div className="text-center" data-aos="fade-down">
             <div className="relative inline-flex items-center justify-center">
-              <img
+              <Image
                 src={VideoTestimonialAsset}
                 width="1024"
                 height="576"

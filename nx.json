@@ -38,6 +38,9 @@
     "shared-ui": {
       "tags": []
     },
+    "shared-utils": {
+      "tags": []
+    },
     "storybook-e2e-ui-e2e": {
       "tags": [],
       "implicitDependencies": ["shared-ui"]

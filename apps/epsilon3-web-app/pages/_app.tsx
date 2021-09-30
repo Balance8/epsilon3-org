@@ -1,20 +1,25 @@
+import { Header, Footer } from '@epsilon3-org/shared/ui';
+import { NextPage } from 'next';
 import { AppProps } from 'next/app';
-import Head from 'next/head';
+
 import './styles.css';
 
-function CustomApp({ Component, pageProps }: AppProps) {
+const CustomApp: NextPage<AppProps> = ({ Component, pageProps }) => {
   return (
     <>
-      <Head>
-        <title>Welcome to site!</title>
-      </Head>
-      <div className="app">
-        <main>
+      <div className="flex flex-col min-h-screen overflow-hidden">
+        {/*  Site header */}
+        <Header />
+        {/*  Page content */}
+        <main className="flex-grow">
           <Component {...pageProps} />
         </main>
+
+        {/*  Site footer */}
+        <Footer />
       </div>
     </>
   );
-}
+};
 
 export default CustomApp;

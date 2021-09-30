@@ -3,8 +3,6 @@ import {
   CtaContact,
   FeaturesAnimation,
   FeaturesGallery,
-  Footer,
-  Header,
   HeroAbout,
   Team,
   Timeline,
@@ -15,25 +13,15 @@ export interface AboutProps {}
 
 export function About(props: AboutProps) {
   return (
-    <div className="flex flex-col min-h-screen overflow-hidden">
-      {/*  Site header */}
-      <Header />
-
-      {/*  Page content */}
-      <main className="flex-grow">
-        {/*  Page sections */}
-        <HeroAbout />
-        <FeaturesGallery />
-        <Timeline />
-        <Career />
-        <FeaturesAnimation />
-        <Team />
-        <CtaContact />
-      </main>
-
-      {/*  Site footer */}
-      <Footer />
-    </div>
+    <>
+      <HeroAbout />
+      <FeaturesGallery />
+      <Timeline />
+      <Career />
+      <FeaturesAnimation />
+      <Team />
+      <CtaContact />
+    </>
   );
 }
 

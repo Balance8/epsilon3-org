@@ -1,4 +1,6 @@
 import './carousel.module.css';
+
+import Image from 'next/image';
 import React, { useEffect } from 'react';
 // Import Swiper
 import Swiper, { Autoplay, Navigation } from 'swiper';
@@ -57,7 +59,7 @@ export function Carousel(props: CarouselProps) {
           <div className="swiper-wrapper">
             {/* Carousel items */}
             <div className="max-w-lg swiper-slide">
-              <img
+              <Image
                 className="transition-opacity duration-300"
                 src={CarouselItem01}
                 width="540"
@@ -84,7 +86,7 @@ export function Carousel(props: CarouselProps) {
               </div>
             </div>
             <div className="max-w-lg swiper-slide">
-              <img
+              <Image
                 className="transition-opacity duration-300"
                 src={CarouselItem02}
                 width="540"
@@ -111,7 +113,7 @@ export function Carousel(props: CarouselProps) {
               </div>
             </div>
             <div className="max-w-lg swiper-slide">
-              <img
+              <Image
                 className="transition-opacity duration-300"
                 src={CarouselItem03}
                 width="540"
@@ -138,7 +140,7 @@ export function Carousel(props: CarouselProps) {
               </div>
             </div>
             <div className="max-w-lg swiper-slide">
-              <img
+              <Image
                 className="transition-opacity duration-300"
                 src={CarouselItem04}
                 width="540"
@@ -165,7 +167,7 @@ export function Carousel(props: CarouselProps) {
               </div>
             </div>
             <div className="max-w-lg swiper-slide">
-              <img
+              <Image
                 className="transition-opacity duration-300"
                 src={CarouselItem05}
                 width="540"

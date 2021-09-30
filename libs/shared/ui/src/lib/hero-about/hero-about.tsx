@@ -1,5 +1,7 @@
 import './hero-about.module.css';
 
+import Image from 'next/image';
+
 import HeroBg03 from '../assets/hero-bg-03.jpg';
 import AboutHero from '../assets/about-hero.jpg';
 
@@ -11,7 +13,7 @@ export function HeroAbout(props: HeroAboutProps) {
     <section className="relative">
       {/* Background image */}
       <div className="box-content absolute inset-0 pt-16 h-128 -z-1">
-        <img
+        <Image
           className="absolute inset-0 object-cover w-full h-full opacity-25"
           src={HeroBg03}
           width="1440"
@@ -32,7 +34,7 @@ export function HeroAbout(props: HeroAboutProps) {
                 className="relative inline-flex items-start"
                 data-aos="fade-up"
               >
-                <img
+                <Image
                   className="opacity-50"
                   src={AboutHero}
                   width="768"

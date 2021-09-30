@@ -1,5 +1,7 @@
 import './process.module.css';
 
+import Image from 'next/image';
+
 import IphoneMockup from '../assets/iphone-mockup.png';
 import MockupImage02 from '../assets/mockup-image-02.jpg';
 import MockupImage03 from '../assets/mockup-image-03.jpg';
@@ -99,16 +101,16 @@ export function Process(props: ProcessProps) {
               {/* Mobile mockup */}
               <div className="relative inline-flex items-center justify-center">
                 {/* Image inside mockup size: 290x624px (or 580x1248px for Retina devices) */}
-                <img
+                <Image
                   className="absolute"
                   src={MockupImage02}
                   width="290"
                   height="624"
-                  style={{ maxWidth: '84.33%' }}
+                  css={{ maxWidth: '84.33%' }}
                   alt="App screen 02"
                 />
                 {/* iPhone mockup */}
-                <img
+                <Image
                   className="relative h-auto max-w-full mx-auto pointer-events-none"
                   src={IphoneMockup}
                   width="344"
@@ -140,16 +142,16 @@ export function Process(props: ProcessProps) {
               {/* Mobile mockup */}
               <div className="relative inline-flex items-center justify-center">
                 {/* Image inside mockup size: 290x624px (or 580x1248px for Retina devices) */}
-                <img
+                <Image
                   className="absolute"
                   src={MockupImage03}
                   width="290"
                   height="624"
-                  style={{ maxWidth: '84.33%' }}
+                  css={{ maxWidth: '84.33%' }}
                   alt="App screen 03"
                 />
                 {/* iPhone mockup */}
-                <img
+                <Image
                   className="relative h-auto max-w-full mx-auto pointer-events-none"
                   src={IphoneMockup}
                   width="344"
@@ -168,16 +170,16 @@ export function Process(props: ProcessProps) {
               {/* Mobile mockup */}
               <div className="relative inline-flex items-center justify-center">
                 {/* Image inside mockup size: 290x624px (or 580x1248px for Retina devices) */}
-                <img
+                <Image
                   className="absolute"
                   src={MockupImage04}
                   width="290"
                   height="624"
-                  style={{ maxWidth: '84.33%' }}
+                  css={{ maxWidth: '84.33%' }}
                   alt="App screen 04"
                 />
                 {/* iPhone mockup */}
-                <img
+                <Image
                   className="relative h-auto max-w-full mx-auto pointer-events-none"
                   src={IphoneMockup}
                   width="344"

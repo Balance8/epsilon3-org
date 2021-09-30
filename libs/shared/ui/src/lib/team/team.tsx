@@ -1,5 +1,7 @@
 import './team.module.css';
 
+import Image from 'next/image';
+
 import TeamMember01 from '../assets/team-member-01.jpg';
 import TeamMember02 from '../assets/team-member-02.jpg';
 import TeamMember03 from '../assets/team-member-03.jpg';
@@ -43,7 +45,7 @@ export function Team(props: TeamProps) {
                 data-aos-anchor="[data-aos-id-team]"
               >
                 <div className="flex flex-col items-center">
-                  <img
+                  <Image
                     className="mb-2 rounded-full"
                     src={TeamMember01}
                     width="80"
@@ -77,7 +79,7 @@ export function Team(props: TeamProps) {
                 data-aos-anchor="[data-aos-id-team]"
               >
                 <div className="flex flex-col items-center">
-                  <img
+                  <Image
                     className="mb-2 rounded-full"
                     src={TeamMember02}
                     width="80"
@@ -111,7 +113,7 @@ export function Team(props: TeamProps) {
                 data-aos-anchor="[data-aos-id-team]"
               >
                 <div className="flex flex-col items-center">
-                  <img
+                  <Image
                     className="mb-2 rounded-full"
                     src={TeamMember03}
                     width="80"
@@ -145,7 +147,7 @@ export function Team(props: TeamProps) {
                 data-aos-anchor="[data-aos-id-team]"
               >
                 <div className="flex flex-col items-center">
-                  <img
+                  <Image
                     className="mb-2 rounded-full"
                     src={TeamMember04}
                     width="80"
@@ -179,7 +181,7 @@ export function Team(props: TeamProps) {
                 data-aos-anchor="[data-aos-id-team]"
               >
                 <div className="flex flex-col items-center">
-                  <img
+                  <Image
                     className="mb-2 rounded-full"
                     src={TeamMember05}
                     width="80"
@@ -213,7 +215,7 @@ export function Team(props: TeamProps) {
                 data-aos-anchor="[data-aos-id-team]"
               >
                 <div className="flex flex-col items-center">
-                  <img
+                  <Image
                     className="mb-2 rounded-full"
                     src={TeamMember06}
                     width="80"
@@ -247,7 +249,7 @@ export function Team(props: TeamProps) {
                 data-aos-anchor="[data-aos-id-team]"
               >
                 <div className="flex flex-col items-center">
-                  <img
+                  <Image
                     className="mb-2 rounded-full"
                     src={TeamMember07}
                     width="80"
@@ -281,7 +283,7 @@ export function Team(props: TeamProps) {
                 data-aos-anchor="[data-aos-id-team]"
               >
                 <div className="flex flex-col items-center">
-                  <img
+                  <Image
                     className="mb-2 rounded-full"
                     src={TeamMember08}
                     width="80"
@@ -315,7 +317,7 @@ export function Team(props: TeamProps) {
                 data-aos-anchor="[data-aos-id-team]"
               >
                 <div className="flex flex-col items-center">
-                  <img
+                  <Image
                     className="mb-2 rounded-full"
                     src={TeamMember09}
                     width="80"
@@ -349,7 +351,7 @@ export function Team(props: TeamProps) {
                 data-aos-anchor="[data-aos-id-team]"
               >
                 <div className="flex flex-col items-center">
-                  <img
+                  <Image
                     className="mb-2 rounded-full"
                     src={TeamMember10}
                     width="80"

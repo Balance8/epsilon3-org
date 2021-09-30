@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import './hero-testimonials.module.css';
 
 import HeroBg02 from '../assets/hero-bg-02.jpg';
@@ -11,7 +12,7 @@ export function HeroTestimonials(props: HeroTestimonialsProps) {
     <section className="relative">
       {/* Background image */}
       <div className="box-content absolute inset-0 pt-16 h-128 -z-1">
-        <img
+        <Image
           className="absolute inset-0 object-cover w-full h-full opacity-25"
           src={HeroBg02}
           width="1440"

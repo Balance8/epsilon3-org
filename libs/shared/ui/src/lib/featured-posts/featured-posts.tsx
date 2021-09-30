@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import './featured-posts.module.css';
 
 import RelatedPost03 from '../assets/related-post-03.jpg';
@@ -26,7 +27,7 @@ export function FeaturedPosts(props: FeaturedPostsProps) {
               data-aos-delay="100"
             >
               <figure>
-                <img
+                <Image
                   className="absolute inset-0 object-cover w-full h-full transition duration-700 ease-out opacity-50 group-hover:opacity-75"
                   src={RelatedPost03}
                   width="258"
@@ -64,7 +65,7 @@ export function FeaturedPosts(props: FeaturedPostsProps) {
               data-aos-delay="200"
             >
               <figure>
-                <img
+                <Image
                   className="absolute inset-0 object-cover w-full h-full transition duration-700 ease-out opacity-50 group-hover:opacity-75"
                   src={RelatedPost04}
                   width="258"
@@ -102,7 +103,7 @@ export function FeaturedPosts(props: FeaturedPostsProps) {
               data-aos-delay="300"
             >
               <figure>
-                <img
+                <Image
                   className="absolute inset-0 object-cover w-full h-full transition duration-700 ease-out opacity-50 group-hover:opacity-75"
                   src={RelatedPost05}
                   width="258"
@@ -140,7 +141,7 @@ export function FeaturedPosts(props: FeaturedPostsProps) {
               data-aos-delay="400"
             >
               <figure>
-                <img
+                <Image
                   className="absolute inset-0 object-cover w-full h-full transition duration-700 ease-out opacity-50 group-hover:opacity-75"
                   src={RelatedPost06}
                   width="258"

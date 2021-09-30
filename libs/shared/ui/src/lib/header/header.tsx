@@ -44,16 +44,21 @@ export function Header(props: HeaderProps) {
 
   // Handle light modes
   const [darkMode, setDarkMode] = useState(() => {
-    const dark = localStorage.getItem('dark-mode');
-    if (dark === null) {
-      return true;
-    } else {
-      return dark === 'true';
+    if (typeof window !== 'undefined') {
+      const dark = localStorage.getItem('dark-mode');
+
+      if (dark === null) {
+        return true;
+      } else {
+        return dark === 'true';
+      }
     }
   });
 
   useEffect(() => {
-    localStorage.setItem('dark-mode', darkMode);
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('dark-mode', darkMode);
+    }
     if (darkMode) {
       document.documentElement.classList.add('dark');
     } else {
