@@ -62,15 +62,18 @@ export function BlogList(props: BlogListProps) {
                     aliqua.
                   </p>
                   <footer className="flex items-center mt-4">
-                    <a href="#0">
-                      <img
-                        className="flex-shrink-0 mr-3 rounded-full"
-                        src={NewsAuthor03}
-                        width="32"
-                        height="32"
-                        alt="Author 03"
-                      />
-                    </a>
+                    <Link href="#0" passHref>
+                      <a>
+                        <img
+                          className="flex-shrink-0 mr-3 rounded-full"
+                          src={NewsAuthor03}
+                          width="32"
+                          height="32"
+                          alt="Author 03"
+                        />
+                      </a>
+                    </Link>
+
                     <div className="text-sm text-gray-500">
                       By{' '}
                       <a
@@ -114,15 +117,17 @@ export function BlogList(props: BlogListProps) {
                     aliqua.
                   </p>
                   <footer className="flex items-center mt-4">
-                    <a href="#0">
-                      <img
-                        className="flex-shrink-0 mr-3 rounded-full"
-                        src={NewsAuthor06}
-                        width="32"
-                        height="32"
-                        alt="Author 06"
-                      />
-                    </a>
+                    <Link href="#0" passHref>
+                      <a>
+                        <img
+                          className="flex-shrink-0 mr-3 rounded-full"
+                          src={NewsAuthor06}
+                          width="32"
+                          height="32"
+                          alt="Author 06"
+                        />
+                      </a>
+                    </Link>
                     <div className="text-sm text-gray-500">
                       By{' '}
                       <a
@@ -166,15 +171,17 @@ export function BlogList(props: BlogListProps) {
                     aliqua.
                   </p>
                   <footer className="flex items-center mt-4">
-                    <a href="#0">
-                      <img
-                        className="flex-shrink-0 mr-3 rounded-full"
-                        src={NewsAuthor01}
-                        width="32"
-                        height="32"
-                        alt="Author 01"
-                      />
-                    </a>
+                    <Link href="#0" passHref>
+                      <a>
+                        <img
+                          className="flex-shrink-0 mr-3 rounded-full"
+                          src={NewsAuthor01}
+                          width="32"
+                          height="32"
+                          alt="Author 01"
+                        />
+                      </a>
+                    </Link>
                     <div className="text-sm text-gray-500">
                       By{' '}
                       <a
@@ -218,15 +225,17 @@ export function BlogList(props: BlogListProps) {
                     aliqua.
                   </p>
                   <footer className="flex items-center mt-4">
-                    <a href="#0">
-                      <img
-                        className="flex-shrink-0 mr-3 rounded-full"
-                        src={NewsAuthor03}
-                        width="32"
-                        height="32"
-                        alt="Author 03"
-                      />
-                    </a>
+                    <Link href="#0" passHref>
+                      <a>
+                        <img
+                          className="flex-shrink-0 mr-3 rounded-full"
+                          src={NewsAuthor03}
+                          width="32"
+                          height="32"
+                          alt="Author 03"
+                        />
+                      </a>
+                    </Link>
                     <div className="text-sm text-gray-500">
                       By{' '}
                       <a
@@ -270,15 +279,17 @@ export function BlogList(props: BlogListProps) {
                     aliqua.
                   </p>
                   <footer className="flex items-center mt-4">
-                    <a href="#0">
-                      <img
-                        className="flex-shrink-0 mr-3 rounded-full"
-                        src={NewsAuthor04}
-                        width="32"
-                        height="32"
-                        alt="Author 04"
-                      />
-                    </a>
+                    <Link href="#0" passHref>
+                      <a>
+                        <img
+                          className="flex-shrink-0 mr-3 rounded-full"
+                          src={NewsAuthor04}
+                          width="32"
+                          height="32"
+                          alt="Author 04"
+                        />
+                      </a>
+                    </Link>
                     <div className="text-sm text-gray-500">
                       By{' '}
                       <a
@@ -322,15 +333,17 @@ export function BlogList(props: BlogListProps) {
                     aliqua.
                   </p>
                   <footer className="flex items-center mt-4">
-                    <a href="#0">
-                      <img
-                        className="flex-shrink-0 mr-3 rounded-full"
-                        src={NewsAuthor05}
-                        width="32"
-                        height="32"
-                        alt="Author 05"
-                      />
-                    </a>
+                    <Link href="#0" passHref>
+                      <a>
+                        <img
+                          className="flex-shrink-0 mr-3 rounded-full"
+                          src={NewsAuthor05}
+                          width="32"
+                          height="32"
+                          alt="Author 05"
+                        />
+                      </a>
+                    </Link>
                     <div className="text-sm text-gray-500">
                       By{' '}
                       <a

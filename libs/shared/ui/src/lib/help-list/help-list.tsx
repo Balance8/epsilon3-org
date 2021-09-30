@@ -7,6 +7,7 @@ import NewsAuthor02 from '../assets/news-author-02.jpg';
 import NewsAuthor03 from '../assets/news-author-03.jpg';
 import NewsAuthor04 from '../assets/news-author-04.jpg';
 import NewsAuthor05 from '../assets/news-author-05.jpg';
+import Link from 'next/link';
 
 /* eslint-disable-next-line */
 export interface HelpListProps {}
@@ -203,7 +204,9 @@ export function HelpList(props: HelpListProps) {
                   <div className="pl-6">
                     <header>
                       <h3 className="mb-1 text-xl font-extrabold tracking-tighter font-red-hat-display">
-                        <a href="#0">Intro to the CMS Editor</a>
+                        <Link href="#0" passHref>
+                          <a>Intro to the CMS Editor</a>
+                        </Link>
                       </h3>
                     </header>
                     <p className="text-gray-600 dark:text-gray-400">
@@ -212,10 +215,7 @@ export function HelpList(props: HelpListProps) {
                       aliquet bibendum enim eu. Excepteur sint occaecat
                       cupidatat non proident, sunt in culpa qui officia.
                     </p>
-                    <a
-                      className="inline-flex items-center mt-2 font-medium text-teal-500 hover:underline"
-                      href="#0"
-                    >
+                    <a className="inline-flex items-center mt-2 font-medium text-teal-500 hover:underline">
                       <span>Learn more</span>
                       <svg
                         className="flex-shrink-0 w-3 h-3 mt-px ml-2"
@@ -230,7 +230,7 @@ export function HelpList(props: HelpListProps) {
                     </a>
                     <footer className="flex items-center mt-3 text-sm">
                       <div className="flex flex-shrink-0 mr-3">
-                        <a className="relative" href="#0">
+                        <a className="relative">
                           <span
                             className="absolute inset-0 -m-px"
                             aria-hidden="true"
@@ -248,10 +248,7 @@ export function HelpList(props: HelpListProps) {
                       </div>
                       <div className="text-gray-500">
                         <span>Written by </span>
-                        <a
-                          className="font-medium text-gray-800 dark:text-gray-400 hover:underline"
-                          href="#0"
-                        >
+                        <a className="font-medium text-gray-800 dark:text-gray-400 hover:underline">
                           Mark Varsano
                         </a>
                       </div>
@@ -288,7 +285,9 @@ export function HelpList(props: HelpListProps) {
                   <div className="pl-6">
                     <header>
                       <h3 className="mb-1 text-xl font-extrabold tracking-tighter font-red-hat-display">
-                        <a href="#0">Overview dynamic content</a>
+                        <Link href="#0" passHref>
+                          <a>Overview dynamic content</a>
+                        </Link>
                       </h3>
                     </header>
                     <p className="text-gray-600 dark:text-gray-400">
@@ -297,10 +296,7 @@ export function HelpList(props: HelpListProps) {
                       aliquet bibendum enim eu. Excepteur sint occaecat
                       cupidatat non proident, sunt in culpa qui officia.
                     </p>
-                    <a
-                      className="inline-flex items-center mt-2 font-medium text-teal-500 hover:underline"
-                      href="#0"
-                    >
+                    <a className="inline-flex items-center mt-2 font-medium text-teal-500 hover:underline">
                       <span>Learn more</span>
                       <svg
                         className="flex-shrink-0 w-3 h-3 mt-px ml-2"
@@ -315,7 +311,7 @@ export function HelpList(props: HelpListProps) {
                     </a>
                     <footer className="flex items-center mt-3 text-sm">
                       <div className="flex flex-shrink-0 mr-3">
-                        <a className="relative" href="#0">
+                        <a className="relative">
                           <span
                             className="absolute inset-0 -m-px"
                             aria-hidden="true"
@@ -330,7 +326,7 @@ export function HelpList(props: HelpListProps) {
                             alt="Author 01"
                           />
                         </a>
-                        <a className="relative -ml-2" href="#0">
+                        <a className="relative -ml-2">
                           <span
                             className="absolute inset-0 -m-px"
                             aria-hidden="true"
@@ -348,17 +344,11 @@ export function HelpList(props: HelpListProps) {
                       </div>
                       <div className="text-gray-500">
                         <span>Written by </span>
-                        <a
-                          className="font-medium text-gray-800 dark:text-gray-400 hover:underline"
-                          href="#0"
-                        >
+                        <a className="font-medium text-gray-800 dark:text-gray-400 hover:underline">
                           Mark Varsano
                         </a>{' '}
                         and{' '}
-                        <a
-                          className="font-medium text-gray-800 dark:text-gray-400 hover:underline"
-                          href="#0"
-                        >
+                        <a className="font-medium text-gray-800 dark:text-gray-400 hover:underline">
                           Elly Taylor
                         </a>
                       </div>
@@ -395,7 +385,9 @@ export function HelpList(props: HelpListProps) {
                   <div className="pl-6">
                     <header>
                       <h3 className="mb-1 text-xl font-extrabold tracking-tighter font-red-hat-display">
-                        <a href="#0">Import collection items</a>
+                        <Link href="#0" passHref>
+                          <a>Import collection items</a>
+                        </Link>
                       </h3>
                     </header>
                     <p className="text-gray-600 dark:text-gray-400">
@@ -404,10 +396,7 @@ export function HelpList(props: HelpListProps) {
                       aliquet bibendum enim eu. Excepteur sint occaecat
                       cupidatat non proident, sunt in culpa qui officia.
                     </p>
-                    <a
-                      className="inline-flex items-center mt-2 font-medium text-teal-500 hover:underline"
-                      href="#0"
-                    >
+                    <a className="inline-flex items-center mt-2 font-medium text-teal-500 hover:underline">
                       <span>Learn more</span>
                       <svg
                         className="flex-shrink-0 w-3 h-3 mt-px ml-2"
@@ -422,7 +411,7 @@ export function HelpList(props: HelpListProps) {
                     </a>
                     <footer className="flex items-center mt-3 text-sm">
                       <div className="flex flex-shrink-0 mr-3">
-                        <a className="relative" href="#0">
+                        <a className="relative">
                           <span
                             className="absolute inset-0 -m-px"
                             aria-hidden="true"
@@ -440,10 +429,7 @@ export function HelpList(props: HelpListProps) {
                       </div>
                       <div className="text-gray-500">
                         <span>Written by </span>
-                        <a
-                          className="font-medium text-gray-800 dark:text-gray-400 hover:underline"
-                          href="#0"
-                        >
+                        <a className="font-medium text-gray-800 dark:text-gray-400 hover:underline">
                           Lisa Allison
                         </a>
                       </div>
@@ -480,7 +466,9 @@ export function HelpList(props: HelpListProps) {
                   <div className="pl-6">
                     <header>
                       <h3 className="mb-1 text-xl font-extrabold tracking-tighter font-red-hat-display">
-                        <a href="#0">Connect a custom domain on Appy</a>
+                        <Link href="#0" passHref>
+                          <a>Connect a custom domain on Appy</a>
+                        </Link>
                       </h3>
                     </header>
                     <p className="text-gray-600 dark:text-gray-400">
@@ -489,10 +477,7 @@ export function HelpList(props: HelpListProps) {
                       aliquet bibendum enim eu. Excepteur sint occaecat
                       cupidatat non proident, sunt in culpa qui officia.
                     </p>
-                    <a
-                      className="inline-flex items-center mt-2 font-medium text-teal-500 hover:underline"
-                      href="#0"
-                    >
+                    <a className="inline-flex items-center mt-2 font-medium text-teal-500 hover:underline">
                       <span>Learn more</span>
                       <svg
                         className="flex-shrink-0 w-3 h-3 mt-px ml-2"
@@ -507,7 +492,7 @@ export function HelpList(props: HelpListProps) {
                     </a>
                     <footer className="flex items-center mt-3 text-sm">
                       <div className="flex flex-shrink-0 mr-3">
-                        <a className="relative" href="#0">
+                        <a className="relative">
                           <span
                             className="absolute inset-0 -m-px"
                             aria-hidden="true"
@@ -525,10 +510,7 @@ export function HelpList(props: HelpListProps) {
                       </div>
                       <div className="text-gray-500">
                         <span>Written by </span>
-                        <a
-                          className="font-medium text-gray-800 dark:text-gray-400 hover:underline"
-                          href="#0"
-                        >
+                        <a className="font-medium text-gray-800 dark:text-gray-400 hover:underline">
                           Mary Champ
                         </a>
                       </div>
@@ -565,7 +547,9 @@ export function HelpList(props: HelpListProps) {
                   <div className="pl-6">
                     <header>
                       <h3 className="mb-1 text-xl font-extrabold tracking-tighter font-red-hat-display">
-                        <a href="#0">Project and page passwords</a>
+                        <Link href="#0" passHref>
+                          <a>Project and page passwords</a>
+                        </Link>
                       </h3>
                     </header>
                     <p className="text-gray-600 dark:text-gray-400">
@@ -574,10 +558,7 @@ export function HelpList(props: HelpListProps) {
                       aliquet bibendum enim eu. Excepteur sint occaecat
                       cupidatat non proident, sunt in culpa qui officia.
                     </p>
-                    <a
-                      className="inline-flex items-center mt-2 font-medium text-teal-500 hover:underline"
-                      href="#0"
-                    >
+                    <a className="inline-flex items-center mt-2 font-medium text-teal-500 hover:underline">
                       <span>Learn more</span>
                       <svg
                         className="flex-shrink-0 w-3 h-3 mt-px ml-2"
@@ -592,7 +573,7 @@ export function HelpList(props: HelpListProps) {
                     </a>
                     <footer className="flex items-center mt-3 text-sm">
                       <div className="flex flex-shrink-0 mr-3">
-                        <a className="relative" href="#0">
+                        <a className="relative">
                           <span
                             className="absolute inset-0 -m-px"
                             aria-hidden="true"
@@ -610,10 +591,7 @@ export function HelpList(props: HelpListProps) {
                       </div>
                       <div className="text-gray-500">
                         <span>Written by </span>
-                        <a
-                          className="font-medium text-gray-800 dark:text-gray-400 hover:underline"
-                          href="#0"
-                        >
+                        <a className="font-medium text-gray-800 dark:text-gray-400 hover:underline">
                           Mark Varsano
                         </a>
                       </div>
@@ -650,7 +628,9 @@ export function HelpList(props: HelpListProps) {
                   <div className="pl-6">
                     <header>
                       <h3 className="mb-1 text-xl font-extrabold tracking-tighter font-red-hat-display">
-                        <a href="#0">Content-driven design</a>
+                        <Link href="#0" passHref>
+                          <a>Content-driven design</a>
+                        </Link>
                       </h3>
                     </header>
                     <p className="text-gray-600 dark:text-gray-400">
@@ -660,7 +640,7 @@ export function HelpList(props: HelpListProps) {
                     </p>
                     <footer className="flex items-center mt-3 text-sm">
                       <div className="flex flex-shrink-0 mr-3">
-                        <a className="relative" href="#0">
+                        <a className="relative">
                           <span
                             className="absolute inset-0 -m-px"
                             aria-hidden="true"
@@ -678,10 +658,7 @@ export function HelpList(props: HelpListProps) {
                       </div>
                       <div className="text-gray-500">
                         <span>Written by </span>
-                        <a
-                          className="font-medium text-gray-800 dark:text-gray-400 hover:underline"
-                          href="#0"
-                        >
+                        <a className="font-medium text-gray-800 dark:text-gray-400 hover:underline">
                           Yuri Lapko
                         </a>
                       </div>
@@ -693,10 +670,7 @@ export function HelpList(props: HelpListProps) {
 
             {/* Pagination */}
             <nav className="flex justify-center mt-12 sm:justify-between">
-              <span
-                className="items-center hidden font-medium text-gray-400 sm:inline-flex dark:text-gray-500"
-                href="#0"
-              >
+              <span className="items-center hidden font-medium text-gray-400 sm:inline-flex dark:text-gray-500">
                 <svg
                   className="flex-shrink-0 w-3 h-3 mt-px mr-2"
                   viewBox="0 0 12 12"
@@ -711,66 +685,42 @@ export function HelpList(props: HelpListProps) {
               </span>
               <ul className="flex">
                 <li className="mx-1">
-                  <a
-                    className="inline-flex px-1 text-teal-500 transition duration-150 ease-in-out border-b border-teal-500"
-                    href="#0"
-                  >
+                  <a className="inline-flex px-1 text-teal-500 transition duration-150 ease-in-out border-b border-teal-500">
                     1
                   </a>
                 </li>
                 <li className="mx-1">
-                  <a
-                    className="inline-flex px-1 text-gray-600 transition duration-150 ease-in-out dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100"
-                    href="#0"
-                  >
+                  <a className="inline-flex px-1 text-gray-600 transition duration-150 ease-in-out dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100">
                     2
                   </a>
                 </li>
                 <li className="mx-1">
-                  <a
-                    className="inline-flex px-1 text-gray-600 transition duration-150 ease-in-out dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100"
-                    href="#0"
-                  >
+                  <a className="inline-flex px-1 text-gray-600 transition duration-150 ease-in-out dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100">
                     3
                   </a>
                 </li>
                 <li className="mx-1">
-                  <span
-                    className="inline-flex text-gray-600 dark:text-gray-400"
-                    href="#0"
-                  >
+                  <span className="inline-flex text-gray-600 dark:text-gray-400">
                     …
                   </span>
                 </li>
                 <li className="mx-1">
-                  <a
-                    className="inline-flex px-1 text-gray-600 transition duration-150 ease-in-out dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100"
-                    href="#0"
-                  >
+                  <a className="inline-flex px-1 text-gray-600 transition duration-150 ease-in-out dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100">
                     7
                   </a>
                 </li>
                 <li className="mx-1">
-                  <a
-                    className="inline-flex px-1 text-gray-600 transition duration-150 ease-in-out dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100"
-                    href="#0"
-                  >
+                  <a className="inline-flex px-1 text-gray-600 transition duration-150 ease-in-out dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100">
                     8
                   </a>
                 </li>
                 <li className="mx-1">
-                  <a
-                    className="inline-flex px-1 text-gray-600 transition duration-150 ease-in-out dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100"
-                    href="#0"
-                  >
+                  <a className="inline-flex px-1 text-gray-600 transition duration-150 ease-in-out dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100">
                     9
                   </a>
                 </li>
               </ul>
-              <a
-                className="items-center hidden font-medium text-teal-500 sm:inline-flex hover:underline"
-                href="#0"
-              >
+              <a className="items-center hidden font-medium text-teal-500 sm:inline-flex hover:underline">
                 <span>Next</span>
                 <svg
                   className="flex-shrink-0 w-3 h-3 mt-px ml-2"

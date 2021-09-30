@@ -40,10 +40,12 @@ export function FeaturedPosts(props: FeaturedPostsProps) {
               </figure>
               <div className="relative flex flex-col h-full text-white">
                 <header className="flex-grow">
-                  <Link className="hover:underline" to="/blog-post">
-                    <h3 className="mb-2 text-lg font-bold tracking-tight font-red-hat-display">
-                      Creating events in the pandemic
-                    </h3>
+                  <Link href="/blog-post" passHref>
+                    <a className="hover:underline">
+                      <h3 className="mb-2 text-lg font-bold tracking-tight font-red-hat-display">
+                        Creating events in the pandemic
+                      </h3>
+                    </a>
                   </Link>
                 </header>
                 <footer>
@@ -76,10 +78,12 @@ export function FeaturedPosts(props: FeaturedPostsProps) {
               </figure>
               <div className="relative flex flex-col h-full text-white">
                 <header className="flex-grow">
-                  <Link className="hover:underline" to="/blog-post">
-                    <h3 className="mb-2 text-lg font-bold tracking-tight font-red-hat-display">
-                      5 Ways to grow your personal network
-                    </h3>
+                  <Link href="/blog-post" passHref>
+                    <a className="hover:underline">
+                      <h3 className="mb-2 text-lg font-bold tracking-tight font-red-hat-display">
+                        5 Ways to grow your personal network
+                      </h3>
+                    </a>
                   </Link>
                 </header>
                 <footer>
@@ -112,10 +116,12 @@ export function FeaturedPosts(props: FeaturedPostsProps) {
               </figure>
               <div className="relative flex flex-col h-full text-white">
                 <header className="flex-grow">
-                  <Link className="hover:underline" to="/blog-post">
-                    <h3 className="mb-2 text-lg font-bold tracking-tight font-red-hat-display">
-                      How to fix my website myself
-                    </h3>
+                  <Link href="/blog-post" passHref>
+                    <a className="hover:underline">
+                      <h3 className="mb-2 text-lg font-bold tracking-tight font-red-hat-display">
+                        How to fix my website myself
+                      </h3>
+                    </a>
                   </Link>
                 </header>
                 <footer>
@@ -148,10 +154,12 @@ export function FeaturedPosts(props: FeaturedPostsProps) {
               </figure>
               <div className="relative flex flex-col h-full text-white">
                 <header className="flex-grow">
-                  <Link className="hover:underline" to="/blog-post">
-                    <h3 className="mb-2 text-lg font-bold tracking-tight font-red-hat-display">
-                      How COVID-19 redefined the entrepreneur
-                    </h3>
+                  <Link href="/blog-post" passHref>
+                    <a className="hover:underline">
+                      <h3 className="mb-2 text-lg font-bold tracking-tight font-red-hat-display">
+                        How COVID-19 redefined the entrepreneur
+                      </h3>
+                    </a>
                   </Link>
                 </header>
                 <footer>

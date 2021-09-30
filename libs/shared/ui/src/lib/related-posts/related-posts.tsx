@@ -43,25 +43,29 @@ export function RelatedPosts(props: RelatedPostsProps) {
                 </figure>
                 <div className="relative flex flex-col h-full">
                   <header className="flex-grow">
-                    <Link className="hover:underline" to="/blog-post">
-                      <h3 className="mb-2 text-lg font-bold tracking-tight font-red-hat-display">
-                        How to talk about yourself in the best possible way
-                      </h3>
+                    <Link href="/blog-post" passHref>
+                      <a className="hover:underline">
+                        <h3 className="mb-2 text-lg font-bold tracking-tight font-red-hat-display">
+                          How to talk about yourself in the best possible way
+                        </h3>
+                      </a>
                     </Link>
                     <div className="text-sm opacity-80">Nov 16, 2020</div>
                   </header>
                   <footer>
                     {/* Author meta */}
                     <div className="flex items-center mt-5 text-sm">
-                      <a href="#0">
-                        <img
-                          className="flex-shrink-0 mr-3 rounded-full"
-                          src={NewsAuthor04}
-                          width="32"
-                          height="32"
-                          alt="Author 04"
-                        />
-                      </a>
+                      <Link href="#0" passHref>
+                        <a>
+                          <img
+                            className="flex-shrink-0 mr-3 rounded-full"
+                            src={NewsAuthor04}
+                            width="32"
+                            height="32"
+                            alt="Author 04"
+                          />
+                        </a>
+                      </Link>
                       <div>
                         <span className="opacity-75">By </span>
                         <a className="font-medium hover:underline" href="#0">
@@ -95,25 +99,30 @@ export function RelatedPosts(props: RelatedPostsProps) {
                 </figure>
                 <div className="relative flex flex-col h-full">
                   <header className="flex-grow">
-                    <Link className="hover:underline" to="/blog-post">
-                      <h3 className="mb-2 text-lg font-bold tracking-tight font-red-hat-display">
-                        How I Park Inc make $5,000 every month by sellings gifts
-                      </h3>
+                    <Link href="/blog-post" passHref>
+                      <a className="hover:underline">
+                        <h3 className="mb-2 text-lg font-bold tracking-tight font-red-hat-display">
+                          How I Park Inc make $5,000 every month by sellings
+                          gifts
+                        </h3>
+                      </a>
                     </Link>
                     <div className="text-sm opacity-80">Nov 12, 2020</div>
                   </header>
                   <footer>
                     {/* Author meta */}
                     <div className="flex items-center mt-5 text-sm">
-                      <a href="#0">
-                        <img
-                          className="flex-shrink-0 mr-3 rounded-full"
-                          src={NewsAuthor03}
-                          width="32"
-                          height="32"
-                          alt="Author 03"
-                        />
-                      </a>
+                      <Link href="#0" passHref>
+                        <a>
+                          <img
+                            className="flex-shrink-0 mr-3 rounded-full"
+                            src={NewsAuthor03}
+                            width="32"
+                            height="32"
+                            alt="Author 03"
+                          />
+                        </a>
+                      </Link>
                       <div>
                         <span className="opacity-75">By </span>
                         <a className="font-medium hover:underline" href="#0">

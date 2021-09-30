@@ -39,11 +39,10 @@ export function HeroTestimonials(props: HeroTestimonialsProps) {
               useful and loved products.
             </p>
             <div className="mt-8" data-aos="fade-down" data-aos-delay="300">
-              <Link
-                className="ml-3 text-white bg-teal-500 btn hover:bg-teal-400"
-                to="/contact"
-              >
-                Request code
+              <Link href="/contact" passHref>
+                <a className="ml-3 text-white bg-teal-500 btn hover:bg-teal-400">
+                  Request code
+                </a>
               </Link>
             </div>
           </div>

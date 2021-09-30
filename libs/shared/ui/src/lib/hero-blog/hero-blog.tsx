@@ -33,10 +33,12 @@ export function HeroBlog(props: HeroBlogProps) {
               <header>
                 {/* Title and excerpt */}
                 <div className="text-center md:text-left">
-                  <Link to="/blog-post">
-                    <h1 className="mb-4 h1 font-red-hat-display">
-                      Appy launches new thematic solutions
-                    </h1>
+                  <Link href="/blog-post" passHref>
+                    <a>
+                      <h1 className="mb-4 h1 font-red-hat-display">
+                        Appy launches new thematic solutions
+                      </h1>
+                    </a>
                   </Link>
                   <p className="text-xl text-gray-600 dark:text-gray-400">
                     Curious about how your favorite product was created? Hear
@@ -48,15 +50,17 @@ export function HeroBlog(props: HeroBlogProps) {
                 <div className="mt-5 md:flex md:items-center md:justify-between">
                   {/* Author meta */}
                   <div className="flex items-center justify-center">
-                    <a href="#0">
-                      <img
-                        className="flex-shrink-0 mr-3 rounded-full"
-                        src={Author01}
-                        width="32"
-                        height="32"
-                        alt="Author 04"
-                      />
-                    </a>
+                    <Link href="#0" passHref>
+                      <a>
+                        <img
+                          className="flex-shrink-0 mr-3 rounded-full"
+                          src={Author01}
+                          width="32"
+                          height="32"
+                          alt="Author 04"
+                        />
+                      </a>
+                    </Link>
                     <div>
                       <span className="text-gray-600 dark:text-gray-400">
                         By{' '}

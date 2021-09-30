@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import './footer.module.css';
 
@@ -7,12 +8,12 @@ export interface FooterProps {}
 export function Footer(props: FooterProps) {
   return (
     <footer className="relative">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="py-12 md:py-16 border-t border-gray-200 dark:border-gray-800 -mt-px">
+      <div className="max-w-6xl px-4 mx-auto sm:px-6">
+        <div className="py-12 -mt-px border-t border-gray-200 md:py-16 dark:border-gray-800">
           {/* Footer illustration */}
           <div className="pointer-events-none -z-1" aria-hidden="true">
             <svg
-              className="absolute bottom-0 left-0 transform -translate-x-1/2 ml-24 dark:opacity-40"
+              className="absolute bottom-0 left-0 ml-24 transform -translate-x-1/2 dark:opacity-40"
               width="800"
               height="264"
               fill="none"
@@ -42,78 +43,81 @@ export function Footer(props: FooterProps) {
           </div>
 
           {/* Top area: Blocks */}
-          <div className="grid md:grid-cols-12 gap-8 lg:gap-20 mb-8 md:mb-12">
+          <div className="grid gap-8 mb-8 md:grid-cols-12 lg:gap-20 md:mb-12">
             {/* 1st block */}
             <div className="md:col-span-2 lg:col-span-3">
               {/* Logo */}
-              <Link className="inline-block" to="/" aria-label="Cruip">
-                <svg
-                  className="w-8 h-8"
-                  viewBox="0 0 32 32"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <defs>
-                    <linearGradient
-                      x1="26%"
-                      y1="100%"
-                      x2="100%"
-                      y2="100%"
-                      id="flogo_a"
-                    >
-                      <stop stopColor="#3ABAB4" offset="0%" />
-                      <stop stopColor="#7F9CF5" offset="100%" />
-                    </linearGradient>
-                    <linearGradient
-                      x1="26%"
-                      y1="100%"
-                      x2="100%"
-                      y2="100%"
-                      id="flogo_b"
-                    >
-                      <stop stopColor="#3ABAB4" offset="0%" />
-                      <stop stopColor="#3ABAB4" stopOpacity="0" offset="100%" />
-                    </linearGradient>
-                  </defs>
-                  <path
-                    d="M32 16h-8a8 8 0 10-16 0H0C0 7.163 7.163 0 16 0s16 7.163 16 16z"
-                    fill="url(#flogo_a)"
-                  />
-                  <path
-                    d="M32 16c0 8.837-7.163 16-16 16S0 24.837 0 16h8a8 8 0 1016 0h8z"
-                    fill="url(#flogo_b)"
-                  />
-                </svg>
+              <Link passHref href="/" aria-label="Cruip">
+                <a className="inline-block">
+                  <svg
+                    className="w-8 h-8"
+                    viewBox="0 0 32 32"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <defs>
+                      <linearGradient
+                        x1="26%"
+                        y1="100%"
+                        x2="100%"
+                        y2="100%"
+                        id="flogo_a"
+                      >
+                        <stop stopColor="#3ABAB4" offset="0%" />
+                        <stop stopColor="#7F9CF5" offset="100%" />
+                      </linearGradient>
+                      <linearGradient
+                        x1="26%"
+                        y1="100%"
+                        x2="100%"
+                        y2="100%"
+                        id="flogo_b"
+                      >
+                        <stop stopColor="#3ABAB4" offset="0%" />
+                        <stop
+                          stopColor="#3ABAB4"
+                          stopOpacity="0"
+                          offset="100%"
+                        />
+                      </linearGradient>
+                    </defs>
+                    <path
+                      d="M32 16h-8a8 8 0 10-16 0H0C0 7.163 7.163 0 16 0s16 7.163 16 16z"
+                      fill="url(#flogo_a)"
+                    />
+                    <path
+                      d="M32 16c0 8.837-7.163 16-16 16S0 24.837 0 16h8a8 8 0 1016 0h8z"
+                      fill="url(#flogo_b)"
+                    />
+                  </svg>
+                </a>
               </Link>
             </div>
 
             {/* 2nd, 3rd, 4th and 5th blocks */}
-            <div className="md:col-span-10 lg:col-span-9 grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="grid grid-cols-2 gap-8 md:col-span-10 lg:col-span-9 md:grid-cols-4">
               {/* 2nd block */}
               <div className="text-sm">
-                <h6 className="font-medium uppercase mb-2">Products</h6>
+                <h6 className="mb-2 font-medium uppercase">Products</h6>
                 <ul>
                   <li className="mb-1">
-                    <Link
-                      className="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out"
-                      to="#"
-                    >
-                      Drag And Drop
+                    <Link href="#" passHref>
+                      <a className="text-gray-600 transition duration-150 ease-in-out dark:text-gray-400 hover:underline">
+                        Drag And Drop
+                      </a>
                     </Link>
                   </li>
                   <li className="mb-1">
-                    <Link
-                      className="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out"
-                      to="#"
-                    >
-                      Visual Studio X
+                    <Link href="#" passHref>
+                      <a className="text-gray-600 transition duration-150 ease-in-out dark:text-gray-400 hover:underline">
+                        Visual Studio X
+                      </a>
                     </Link>
                   </li>
                   <li className="mb-1">
-                    <Link
-                      className="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out"
-                      to="#"
-                    >
-                      Easy Content
+                    <Link href="#" passHref>
+                      <a className="text-gray-600 transition duration-150 ease-in-out dark:text-gray-400 hover:underline">
+                        Easy Content
+                      </a>
                     </Link>
                   </li>
                 </ul>
@@ -121,46 +125,41 @@ export function Footer(props: FooterProps) {
 
               {/* 3rd block */}
               <div className="text-sm">
-                <h6 className="font-medium uppercase mb-2">Resources</h6>
+                <h6 className="mb-2 font-medium uppercase">Resources</h6>
                 <ul>
                   <li className="mb-1">
-                    <Link
-                      className="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out"
-                      to="#"
-                    >
-                      Industries and tools
+                    <Link href="#" passHref>
+                      <a className="text-gray-600 transition duration-150 ease-in-out dark:text-gray-400 hover:underline">
+                        Industries and tools
+                      </a>
                     </Link>
                   </li>
                   <li className="mb-1">
-                    <Link
-                      className="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out"
-                      to="#"
-                    >
-                      Use cases
+                    <Link href="#" passHref>
+                      <a className="text-gray-600 transition duration-150 ease-in-out dark:text-gray-400 hover:underline">
+                        Use cases
+                      </a>
                     </Link>
                   </li>
                   <li className="mb-1">
-                    <Link
-                      className="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out"
-                      to="#"
-                    >
-                      Blog
+                    <Link href="#" passHref>
+                      <a className="text-gray-600 transition duration-150 ease-in-out dark:text-gray-400 hover:underline">
+                        Blog
+                      </a>
                     </Link>
                   </li>
                   <li className="mb-1">
-                    <Link
-                      className="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out"
-                      to="#"
-                    >
-                      Online events
+                    <Link href="#" passHref>
+                      <a className="text-gray-600 transition duration-150 ease-in-out dark:text-gray-400 hover:underline">
+                        Online events
+                      </a>
                     </Link>
                   </li>
                   <li className="mb-1">
-                    <Link
-                      className="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out"
-                      to="#"
-                    >
-                      Nostrud exercitation
+                    <Link href="#" passHref>
+                      <a className="text-gray-600 transition duration-150 ease-in-out dark:text-gray-400 hover:underline">
+                        Nostrud exercitation
+                      </a>
                     </Link>
                   </li>
                 </ul>
@@ -168,46 +167,41 @@ export function Footer(props: FooterProps) {
 
               {/* 4th block */}
               <div className="text-sm">
-                <h6 className="font-medium uppercase mb-2">Company</h6>
+                <h6 className="mb-2 font-medium uppercase">Company</h6>
                 <ul>
                   <li className="mb-1">
-                    <Link
-                      className="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out"
-                      to="#"
-                    >
-                      Diversity & inclusion
+                    <Link href="#" passHref>
+                      <a className="text-gray-600 transition duration-150 ease-in-out dark:text-gray-400 hover:underline">
+                        Diversity & inclusion
+                      </a>
                     </Link>
                   </li>
                   <li className="mb-1">
-                    <Link
-                      className="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out"
-                      to="#"
-                    >
-                      About us
+                    <Link href="#" passHref>
+                      <a className="text-gray-600 transition duration-150 ease-in-out dark:text-gray-400 hover:underline">
+                        About us
+                      </a>
                     </Link>
                   </li>
                   <li className="mb-1">
-                    <Link
-                      className="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out"
-                      to="#"
-                    >
-                      Press
+                    <Link href="#" passHref>
+                      <a className="text-gray-600 transition duration-150 ease-in-out dark:text-gray-400 hover:underline">
+                        Press
+                      </a>
                     </Link>
                   </li>
                   <li className="mb-1">
-                    <Link
-                      className="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out"
-                      to="#"
-                    >
-                      Customer stories
+                    <Link href="#" passHref>
+                      <a className="text-gray-600 transition duration-150 ease-in-out dark:text-gray-400 hover:underline">
+                        Customer stories
+                      </a>
                     </Link>
                   </li>
                   <li className="mb-1">
-                    <Link
-                      className="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out"
-                      to="#"
-                    >
-                      Online communities
+                    <Link href="#" passHref>
+                      <a className="text-gray-600 transition duration-150 ease-in-out dark:text-gray-400 hover:underline">
+                        Online communities
+                      </a>
                     </Link>
                   </li>
                 </ul>
@@ -215,38 +209,34 @@ export function Footer(props: FooterProps) {
 
               {/* 5th block */}
               <div className="text-sm">
-                <h6 className="font-medium uppercase mb-2">Support</h6>
+                <h6 className="mb-2 font-medium uppercase">Support</h6>
                 <ul>
                   <li className="mb-1">
-                    <Link
-                      className="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out"
-                      to="#"
-                    >
-                      Documentation
+                    <Link href="#" passHref>
+                      <a className="text-gray-600 transition duration-150 ease-in-out dark:text-gray-400 hover:underline">
+                        Documentation
+                      </a>
                     </Link>
                   </li>
                   <li className="mb-1">
-                    <Link
-                      className="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out"
-                      to="#"
-                    >
-                      Tutorials & guides
+                    <Link href="#" passHref>
+                      <a className="text-gray-600 transition duration-150 ease-in-out dark:text-gray-400 hover:underline">
+                        Tutorials & guides
+                      </a>
                     </Link>
                   </li>
                   <li className="mb-1">
-                    <Link
-                      className="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out"
-                      to="#"
-                    >
-                      Webinars
+                    <Link href="#" passHref>
+                      <a className="text-gray-600 transition duration-150 ease-in-out dark:text-gray-400 hover:underline">
+                        Webinars
+                      </a>
                     </Link>
                   </li>
                   <li className="mb-1">
-                    <Link
-                      className="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out"
-                      to="#"
-                    >
-                      Open-source
+                    <Link href="#" passHref>
+                      <a className="text-gray-600 transition duration-150 ease-in-out dark:text-gray-400 hover:underline">
+                        Open-source
+                      </a>
                     </Link>
                   </li>
                 </ul>
@@ -260,7 +250,7 @@ export function Footer(props: FooterProps) {
             <ul className="flex mb-4 md:order-2 md:ml-4 md:mb-0">
               <li>
                 <a
-                  className="flex justify-center items-center text-white bg-teal-500 dark:text-teal-500 dark:bg-gray-800 hover:underline hover:bg-teal-600 rounded-full transition duration-150 ease-in-out"
+                  className="flex items-center justify-center text-white transition duration-150 ease-in-out bg-teal-500 rounded-full dark:text-teal-500 dark:bg-gray-800 hover:underline hover:bg-teal-600"
                   href="#0"
                   aria-label="Twitter"
                 >
@@ -275,7 +265,7 @@ export function Footer(props: FooterProps) {
               </li>
               <li className="ml-4">
                 <a
-                  className="flex justify-center items-center text-white bg-teal-500 dark:text-teal-500 dark:bg-gray-800 hover:underline hover:bg-teal-600 rounded-full transition duration-150 ease-in-out"
+                  className="flex items-center justify-center text-white transition duration-150 ease-in-out bg-teal-500 rounded-full dark:text-teal-500 dark:bg-gray-800 hover:underline hover:bg-teal-600"
                   href="#0"
                   aria-label="Github"
                 >
@@ -290,7 +280,7 @@ export function Footer(props: FooterProps) {
               </li>
               <li className="ml-4">
                 <a
-                  className="flex justify-center items-center text-white bg-teal-500 dark:text-teal-500 dark:bg-gray-800 hover:underline hover:bg-teal-600 rounded-full transition duration-150 ease-in-out"
+                  className="flex items-center justify-center text-white transition duration-150 ease-in-out bg-teal-500 rounded-full dark:text-teal-500 dark:bg-gray-800 hover:underline hover:bg-teal-600"
                   href="#0"
                   aria-label="Facebook"
                 >
@@ -305,7 +295,7 @@ export function Footer(props: FooterProps) {
               </li>
               <li className="ml-4">
                 <a
-                  className="flex justify-center items-center text-white bg-teal-500 dark:text-teal-500 dark:bg-gray-800 hover:underline hover:bg-teal-600 rounded-full transition duration-150 ease-in-out"
+                  className="flex items-center justify-center text-white transition duration-150 ease-in-out bg-teal-500 rounded-full dark:text-teal-500 dark:bg-gray-800 hover:underline hover:bg-teal-600"
                   href="#0"
                   aria-label="Instagram"
                 >
@@ -322,7 +312,7 @@ export function Footer(props: FooterProps) {
               </li>
               <li className="ml-4">
                 <a
-                  className="flex justify-center items-center text-white bg-teal-500 dark:text-teal-500 dark:bg-gray-800 hover:underline hover:bg-teal-600 rounded-full transition duration-150 ease-in-out"
+                  className="flex items-center justify-center text-white transition duration-150 ease-in-out bg-teal-500 rounded-full dark:text-teal-500 dark:bg-gray-800 hover:underline hover:bg-teal-600"
                   href="#0"
                   aria-label="Linkedin"
                 >
@@ -338,24 +328,22 @@ export function Footer(props: FooterProps) {
             </ul>
 
             {/* Middle links */}
-            <div className="text-sm md:order-1 text-gray-700 mb-2 md:mb-0">
-              <Link
-                className="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out"
-                to="#"
-              >
-                Terms
+            <div className="mb-2 text-sm text-gray-700 md:order-1 md:mb-0">
+              <Link href="#" passHref>
+                <a className="text-gray-600 transition duration-150 ease-in-out dark:text-gray-400 hover:underline">
+                  Terms
+                </a>
               </Link>{' '}
               ·{' '}
-              <Link
-                className="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out"
-                to="#"
-              >
-                Privacy Policy
+              <Link href="#" passHref>
+                <a className="text-gray-600 transition duration-150 ease-in-out dark:text-gray-400 hover:underline">
+                  Privacy Policy
+                </a>
               </Link>
             </div>
 
             {/* Copyrights note */}
-            <div className="text-gray-600 dark:text-gray-400 text-sm mr-4">
+            <div className="mr-4 text-sm text-gray-600 dark:text-gray-400">
               &copy; 2020 Appy. All rights reserved.
             </div>
           </div>

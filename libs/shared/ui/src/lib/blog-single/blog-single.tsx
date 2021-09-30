@@ -4,6 +4,7 @@ import HeroBg from '../assets/hero-bg.jpg';
 import NewsAuthor01 from '../assets/news-author-01.jpg';
 import NewsInnerImage from '../assets/news-inner-image.jpg';
 import NewsInnerImageLeft from '../assets/news-inner-image-left.jpg';
+import Link from 'next/link';
 
 /* eslint-disable-next-line */
 export interface BlogSingleProps {}
@@ -58,15 +59,17 @@ export function BlogSingle(props: BlogSingleProps) {
                     data-aos="fade-down"
                     data-aos-delay="300"
                   >
-                    <a href="#0">
-                      <img
-                        className="flex-shrink-0 mr-3 rounded-full"
-                        src={NewsAuthor01}
-                        width="32"
-                        height="32"
-                        alt="Author 04"
-                      />
-                    </a>
+                    <Link href="#0" passHref>
+                      <a>
+                        <img
+                          className="flex-shrink-0 mr-3 rounded-full"
+                          src={NewsAuthor01}
+                          width="32"
+                          height="32"
+                          alt="Author 04"
+                        />
+                      </a>
+                    </Link>
                     <div>
                       <span className="text-gray-600 dark:text-gray-400">
                         By{' '}

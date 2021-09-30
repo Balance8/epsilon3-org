@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useState } from 'react';
 import './timeline.module.css';
 
@@ -9,11 +10,11 @@ export function Timeline(props: TimelineProps) {
 
   return (
     <section>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="py-12 md:py-20 border-t border-gray-200 dark:border-gray-800">
+      <div className="max-w-6xl px-4 mx-auto sm:px-6">
+        <div className="py-12 border-t border-gray-200 md:py-20 dark:border-gray-800">
           {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 font-red-hat-display mb-4">
+          <div className="max-w-3xl pb-12 mx-auto text-center md:pb-20">
+            <h2 className="mb-4 h2 font-red-hat-display">
               What we’ve achieved
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-400">
@@ -34,7 +35,7 @@ export function Timeline(props: TimelineProps) {
                   <div className="absolute inset-0 w-0.5 h-full bg-gray-300 dark:bg-gray-700"></div>
                 </div>
                 <button
-                  className="flex items-center justify-between font-medium text-gray-500 dark:text-gray-400 w-20 py-3 pr-2 text-left"
+                  className="flex items-center justify-between w-20 py-3 pr-2 font-medium text-left text-gray-500 dark:text-gray-400"
                   onClick={() => setYear('2020')}
                 >
                   <span className="block w-12 truncate">2020</span>
@@ -45,7 +46,7 @@ export function Timeline(props: TimelineProps) {
                   ></span>
                 </button>
                 <button
-                  className="flex items-center justify-between font-medium text-gray-500 dark:text-gray-400 w-20 py-3 pr-2 text-left"
+                  className="flex items-center justify-between w-20 py-3 pr-2 font-medium text-left text-gray-500 dark:text-gray-400"
                   onClick={() => setYear('2019')}
                 >
                   <span className="block w-12 truncate">2019</span>
@@ -56,7 +57,7 @@ export function Timeline(props: TimelineProps) {
                   ></span>
                 </button>
                 <button
-                  className="flex items-center justify-between font-medium text-gray-500 dark:text-gray-400 w-20 py-3 pr-2 text-left"
+                  className="flex items-center justify-between w-20 py-3 pr-2 font-medium text-left text-gray-500 dark:text-gray-400"
                   onClick={() => setYear('2018')}
                 >
                   <span className="block w-12 truncate">2018</span>
@@ -67,7 +68,7 @@ export function Timeline(props: TimelineProps) {
                   ></span>
                 </button>
                 <button
-                  className="flex items-center justify-between font-medium text-gray-500 dark:text-gray-400 w-20 py-3 pr-2 text-left"
+                  className="flex items-center justify-between w-20 py-3 pr-2 font-medium text-left text-gray-500 dark:text-gray-400"
                   onClick={() => setYear('2017')}
                 >
                   <span className="block w-12 truncate">2017</span>
@@ -78,7 +79,7 @@ export function Timeline(props: TimelineProps) {
                   ></span>
                 </button>
                 <button
-                  className="flex items-center justify-between font-medium text-gray-500 dark:text-gray-400 w-20 py-3 pr-2 text-left"
+                  className="flex items-center justify-between w-20 py-3 pr-2 font-medium text-left text-gray-500 dark:text-gray-400"
                   onClick={() => setYear('2016')}
                 >
                   <span className="block w-12 truncate">2016</span>
@@ -92,26 +93,25 @@ export function Timeline(props: TimelineProps) {
 
               {/* 2020's articles */}
               <div className={`flex-grow ${year !== '2020' && 'hidden'}`}>
-                <div className="grid md:grid-cols-2 gap-4 sm:gap-6">
-                  <article className="p-6 bg-white dark:bg-gray-800 shadow-2xl flex flex-col">
+                <div className="grid gap-4 md:grid-cols-2 sm:gap-6">
+                  <article className="flex flex-col p-6 bg-white shadow-2xl dark:bg-gray-800">
                     <header>
-                      <h3 className="h4 font-red-hat-display mb-1">
-                        <a href="#0">Launched Appy Business</a>
+                      <h3 className="mb-1 h4 font-red-hat-display">
+                        <Link href="#0" passHref>
+                          <a>Launched Appy Business</a>
+                        </Link>
                       </h3>
                     </header>
-                    <div className="text-gray-600 dark:text-gray-400 flex-grow">
+                    <div className="flex-grow text-gray-600 dark:text-gray-400">
                       <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt.
                       </p>
                     </div>
-                    <a
-                      className="inline-flex items-center font-medium text-teal-500 hover:underline mt-2"
-                      href="#0"
-                    >
+                    <a className="inline-flex items-center mt-2 font-medium text-teal-500 hover:underline">
                       <span>Learn more</span>
                       <svg
-                        className="w-3 h-3 flex-shrink-0 mt-px ml-2"
+                        className="flex-shrink-0 w-3 h-3 mt-px ml-2"
                         viewBox="0 0 12 12"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -122,25 +122,24 @@ export function Timeline(props: TimelineProps) {
                       </svg>
                     </a>
                   </article>
-                  <article className="p-6 bg-white dark:bg-gray-800 shadow-2xl flex flex-col">
+                  <article className="flex flex-col p-6 bg-white shadow-2xl dark:bg-gray-800">
                     <header>
-                      <h3 className="h4 font-red-hat-display mb-1">
-                        <a href="#0">Series B fundraising</a>
+                      <h3 className="mb-1 h4 font-red-hat-display">
+                        <Link href="#0" passHref>
+                          <a>Series B fundraising</a>
+                        </Link>
                       </h3>
                     </header>
-                    <div className="text-gray-600 dark:text-gray-400 flex-grow">
+                    <div className="flex-grow text-gray-600 dark:text-gray-400">
                       <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt.
                       </p>
                     </div>
-                    <a
-                      className="inline-flex items-center font-medium text-teal-500 hover:underline mt-2"
-                      href="#0"
-                    >
+                    <a className="inline-flex items-center mt-2 font-medium text-teal-500 hover:underline">
                       <span>Learn more</span>
                       <svg
-                        className="w-3 h-3 flex-shrink-0 mt-px ml-2"
+                        className="flex-shrink-0 w-3 h-3 mt-px ml-2"
                         viewBox="0 0 12 12"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -151,25 +150,24 @@ export function Timeline(props: TimelineProps) {
                       </svg>
                     </a>
                   </article>
-                  <article className="p-6 bg-white dark:bg-gray-800 shadow-2xl flex flex-col">
+                  <article className="flex flex-col p-6 bg-white shadow-2xl dark:bg-gray-800">
                     <header>
-                      <h3 className="h4 font-red-hat-display mb-1">
-                        <a href="#0">1M Customers</a>
+                      <h3 className="mb-1 h4 font-red-hat-display">
+                        <Link href="#0" passHref>
+                          <a>1M Customers</a>
+                        </Link>
                       </h3>
                     </header>
-                    <div className="text-gray-600 dark:text-gray-400 flex-grow">
+                    <div className="flex-grow text-gray-600 dark:text-gray-400">
                       <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt.
                       </p>
                     </div>
-                    <a
-                      className="inline-flex items-center font-medium text-teal-500 hover:underline mt-2"
-                      href="#0"
-                    >
+                    <a className="inline-flex items-center mt-2 font-medium text-teal-500 hover:underline">
                       <span>Learn more</span>
                       <svg
-                        className="w-3 h-3 flex-shrink-0 mt-px ml-2"
+                        className="flex-shrink-0 w-3 h-3 mt-px ml-2"
                         viewBox="0 0 12 12"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -180,25 +178,24 @@ export function Timeline(props: TimelineProps) {
                       </svg>
                     </a>
                   </article>
-                  <article className="p-6 bg-white dark:bg-gray-800 shadow-2xl flex flex-col">
+                  <article className="flex flex-col p-6 bg-white shadow-2xl dark:bg-gray-800">
                     <header>
-                      <h3 className="h4 font-red-hat-display mb-1">
-                        <a href="#0">Mobile builder enabled</a>
+                      <h3 className="mb-1 h4 font-red-hat-display">
+                        <Link href="#0" passHref>
+                          <a>Mobile builder enabled</a>
+                        </Link>
                       </h3>
                     </header>
-                    <div className="text-gray-600 dark:text-gray-400 flex-grow">
+                    <div className="flex-grow text-gray-600 dark:text-gray-400">
                       <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt.
                       </p>
                     </div>
-                    <a
-                      className="inline-flex items-center font-medium text-teal-500 hover:underline mt-2"
-                      href="#0"
-                    >
+                    <a className="inline-flex items-center mt-2 font-medium text-teal-500 hover:underline">
                       <span>Learn more</span>
                       <svg
-                        className="w-3 h-3 flex-shrink-0 mt-px ml-2"
+                        className="flex-shrink-0 w-3 h-3 mt-px ml-2"
                         viewBox="0 0 12 12"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -214,26 +211,25 @@ export function Timeline(props: TimelineProps) {
 
               {/* 2019's articles */}
               <div className={`flex-grow ${year !== '2019' && 'hidden'}`}>
-                <div className="grid md:grid-cols-2 gap-6">
-                  <article className="p-6 bg-white dark:bg-gray-800 shadow-2xl flex flex-col">
+                <div className="grid gap-6 md:grid-cols-2">
+                  <article className="flex flex-col p-6 bg-white shadow-2xl dark:bg-gray-800">
                     <header>
-                      <h3 className="h4 font-red-hat-display mb-1">
-                        <a href="#0">1M Customers</a>
+                      <h3 className="mb-1 h4 font-red-hat-display">
+                        <Link href="#0" passHref>
+                          <a>1M Customers</a>
+                        </Link>
                       </h3>
                     </header>
-                    <div className="text-gray-600 dark:text-gray-400 flex-grow">
+                    <div className="flex-grow text-gray-600 dark:text-gray-400">
                       <p>
                         Sed do eiusmod tempor incididunt, Lorem ipsum dolor sit
                         amet, consectetur adipiscing elit.
                       </p>
                     </div>
-                    <a
-                      className="inline-flex items-center font-medium text-teal-500 hover:underline mt-2"
-                      href="#0"
-                    >
+                    <a className="inline-flex items-center mt-2 font-medium text-teal-500 hover:underline">
                       <span>Learn more</span>
                       <svg
-                        className="w-3 h-3 flex-shrink-0 mt-px ml-2"
+                        className="flex-shrink-0 w-3 h-3 mt-px ml-2"
                         viewBox="0 0 12 12"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -244,25 +240,24 @@ export function Timeline(props: TimelineProps) {
                       </svg>
                     </a>
                   </article>
-                  <article className="p-6 bg-white dark:bg-gray-800 shadow-2xl flex flex-col">
+                  <article className="flex flex-col p-6 bg-white shadow-2xl dark:bg-gray-800">
                     <header>
-                      <h3 className="h4 font-red-hat-display mb-1">
-                        <a href="#0">Mobile builder enabled</a>
+                      <h3 className="mb-1 h4 font-red-hat-display">
+                        <Link href="#0" passHref>
+                          <a>Mobile builder enabled</a>
+                        </Link>
                       </h3>
                     </header>
-                    <div className="text-gray-600 dark:text-gray-400 flex-grow">
+                    <div className="flex-grow text-gray-600 dark:text-gray-400">
                       <p>
                         Sed do eiusmod tempor incididunt, Lorem ipsum dolor sit
                         amet, consectetur adipiscing elit.
                       </p>
                     </div>
-                    <a
-                      className="inline-flex items-center font-medium text-teal-500 hover:underline mt-2"
-                      href="#0"
-                    >
+                    <a className="inline-flex items-center mt-2 font-medium text-teal-500 hover:underline">
                       <span>Learn more</span>
                       <svg
-                        className="w-3 h-3 flex-shrink-0 mt-px ml-2"
+                        className="flex-shrink-0 w-3 h-3 mt-px ml-2"
                         viewBox="0 0 12 12"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -278,26 +273,25 @@ export function Timeline(props: TimelineProps) {
 
               {/* 2018's articles */}
               <div className={`flex-grow ${year !== '2018' && 'hidden'}`}>
-                <div className="grid md:grid-cols-2 gap-6">
-                  <article className="p-6 bg-white dark:bg-gray-800 shadow-2xl flex flex-col">
+                <div className="grid gap-6 md:grid-cols-2">
+                  <article className="flex flex-col p-6 bg-white shadow-2xl dark:bg-gray-800">
                     <header>
-                      <h3 className="h4 font-red-hat-display mb-1">
-                        <a href="#0">Series B fundraising</a>
+                      <h3 className="mb-1 h4 font-red-hat-display">
+                        <Link href="#0" passHref>
+                          <a>Series B fundraising</a>
+                        </Link>
                       </h3>
                     </header>
-                    <div className="text-gray-600 dark:text-gray-400 flex-grow">
+                    <div className="flex-grow text-gray-600 dark:text-gray-400">
                       <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt.
                       </p>
                     </div>
-                    <a
-                      className="inline-flex items-center font-medium text-teal-500 hover:underline mt-2"
-                      href="#0"
-                    >
+                    <a className="inline-flex items-center mt-2 font-medium text-teal-500 hover:underline">
                       <span>Learn more</span>
                       <svg
-                        className="w-3 h-3 flex-shrink-0 mt-px ml-2"
+                        className="flex-shrink-0 w-3 h-3 mt-px ml-2"
                         viewBox="0 0 12 12"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -308,25 +302,24 @@ export function Timeline(props: TimelineProps) {
                       </svg>
                     </a>
                   </article>
-                  <article className="p-6 bg-white dark:bg-gray-800 shadow-2xl flex flex-col">
+                  <article className="flex flex-col p-6 bg-white shadow-2xl dark:bg-gray-800">
                     <header>
-                      <h3 className="h4 font-red-hat-display mb-1">
-                        <a href="#0">Launched Appy Business</a>
+                      <h3 className="mb-1 h4 font-red-hat-display">
+                        <Link href="#0" passHref>
+                          <a>Launched Appy Business</a>
+                        </Link>
                       </h3>
                     </header>
-                    <div className="text-gray-600 dark:text-gray-400 flex-grow">
+                    <div className="flex-grow text-gray-600 dark:text-gray-400">
                       <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt.
                       </p>
                     </div>
-                    <a
-                      className="inline-flex items-center font-medium text-teal-500 hover:underline mt-2"
-                      href="#0"
-                    >
+                    <a className="inline-flex items-center mt-2 font-medium text-teal-500 hover:underline">
                       <span>Learn more</span>
                       <svg
-                        className="w-3 h-3 flex-shrink-0 mt-px ml-2"
+                        className="flex-shrink-0 w-3 h-3 mt-px ml-2"
                         viewBox="0 0 12 12"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -342,26 +335,25 @@ export function Timeline(props: TimelineProps) {
 
               {/* 2017's articles */}
               <div className={`flex-grow ${year !== '2017' && 'hidden'}`}>
-                <div className="grid md:grid-cols-2 gap-6">
-                  <article className="p-6 bg-white dark:bg-gray-800 shadow-2xl flex flex-col">
+                <div className="grid gap-6 md:grid-cols-2">
+                  <article className="flex flex-col p-6 bg-white shadow-2xl dark:bg-gray-800">
                     <header>
-                      <h3 className="h4 font-red-hat-display mb-1">
-                        <a href="#0">1M Customers</a>
+                      <h3 className="mb-1 h4 font-red-hat-display">
+                        <Link href="#0" passHref>
+                          <a>1M Customers</a>
+                        </Link>
                       </h3>
                     </header>
-                    <div className="text-gray-600 dark:text-gray-400 flex-grow">
+                    <div className="flex-grow text-gray-600 dark:text-gray-400">
                       <p>
                         Sed do eiusmod tempor incididunt, Lorem ipsum dolor sit
                         amet, consectetur adipiscing elit.
                       </p>
                     </div>
-                    <a
-                      className="inline-flex items-center font-medium text-teal-500 hover:underline mt-2"
-                      href="#0"
-                    >
+                    <a className="inline-flex items-center mt-2 font-medium text-teal-500 hover:underline">
                       <span>Learn more</span>
                       <svg
-                        className="w-3 h-3 flex-shrink-0 mt-px ml-2"
+                        className="flex-shrink-0 w-3 h-3 mt-px ml-2"
                         viewBox="0 0 12 12"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -372,25 +364,24 @@ export function Timeline(props: TimelineProps) {
                       </svg>
                     </a>
                   </article>
-                  <article className="p-6 bg-white dark:bg-gray-800 shadow-2xl flex flex-col">
+                  <article className="flex flex-col p-6 bg-white shadow-2xl dark:bg-gray-800">
                     <header>
-                      <h3 className="h4 font-red-hat-display mb-1">
-                        <a href="#0">Mobile builder enabled</a>
+                      <h3 className="mb-1 h4 font-red-hat-display">
+                        <Link href="#0" passHref>
+                          <a>Mobile builder enabled</a>
+                        </Link>
                       </h3>
                     </header>
-                    <div className="text-gray-600 dark:text-gray-400 flex-grow">
+                    <div className="flex-grow text-gray-600 dark:text-gray-400">
                       <p>
                         Sed do eiusmod tempor incididunt, Lorem ipsum dolor sit
                         amet, consectetur adipiscing elit.
                       </p>
                     </div>
-                    <a
-                      className="inline-flex items-center font-medium text-teal-500 hover:underline mt-2"
-                      href="#0"
-                    >
+                    <a className="inline-flex items-center mt-2 font-medium text-teal-500 hover:underline">
                       <span>Learn more</span>
                       <svg
-                        className="w-3 h-3 flex-shrink-0 mt-px ml-2"
+                        className="flex-shrink-0 w-3 h-3 mt-px ml-2"
                         viewBox="0 0 12 12"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -406,14 +397,16 @@ export function Timeline(props: TimelineProps) {
 
               {/* 2016's articles */}
               <div className={`flex-grow ${year !== '2016' && 'hidden'}`}>
-                <div className="grid md:grid-cols-2 gap-6">
-                  <article className="md:col-span-2 p-6 bg-white dark:bg-gray-800 shadow-2xl flex flex-col">
+                <div className="grid gap-6 md:grid-cols-2">
+                  <article className="flex flex-col p-6 bg-white shadow-2xl md:col-span-2 dark:bg-gray-800">
                     <header>
-                      <h3 className="h4 font-red-hat-display mb-1">
-                        <a href="#0">Mobile builder enabled</a>
+                      <h3 className="mb-1 h4 font-red-hat-display">
+                        <Link href="#0" passHref>
+                          <a>Mobile builder enabled</a>
+                        </Link>
                       </h3>
                     </header>
-                    <div className="text-gray-600 dark:text-gray-400 flex-grow">
+                    <div className="flex-grow text-gray-600 dark:text-gray-400">
                       <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt. Excepteur sint
@@ -421,13 +414,10 @@ export function Timeline(props: TimelineProps) {
                         officia deserunt mollit anim id est.
                       </p>
                     </div>
-                    <a
-                      className="inline-flex items-center font-medium text-teal-500 hover:underline mt-2"
-                      href="#0"
-                    >
+                    <a className="inline-flex items-center mt-2 font-medium text-teal-500 hover:underline">
                       <span>Learn more</span>
                       <svg
-                        className="w-3 h-3 flex-shrink-0 mt-px ml-2"
+                        className="flex-shrink-0 w-3 h-3 mt-px ml-2"
                         viewBox="0 0 12 12"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -438,25 +428,24 @@ export function Timeline(props: TimelineProps) {
                       </svg>
                     </a>
                   </article>
-                  <article className="p-6 bg-white dark:bg-gray-800 shadow-2xl flex flex-col">
+                  <article className="flex flex-col p-6 bg-white shadow-2xl dark:bg-gray-800">
                     <header>
-                      <h3 className="h4 font-red-hat-display mb-1">
-                        <a href="#0">Series B fundraising</a>
+                      <h3 className="mb-1 h4 font-red-hat-display">
+                        <Link href="#0" passHref>
+                          <a>Series B fundraising</a>
+                        </Link>
                       </h3>
                     </header>
-                    <div className="text-gray-600 dark:text-gray-400 flex-grow">
+                    <div className="flex-grow text-gray-600 dark:text-gray-400">
                       <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt.
                       </p>
                     </div>
-                    <a
-                      className="inline-flex items-center font-medium text-teal-500 hover:underline mt-2"
-                      href="#0"
-                    >
+                    <a className="inline-flex items-center mt-2 font-medium text-teal-500 hover:underline">
                       <span>Learn more</span>
                       <svg
-                        className="w-3 h-3 flex-shrink-0 mt-px ml-2"
+                        className="flex-shrink-0 w-3 h-3 mt-px ml-2"
                         viewBox="0 0 12 12"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -467,25 +456,24 @@ export function Timeline(props: TimelineProps) {
                       </svg>
                     </a>
                   </article>
-                  <article className="p-6 bg-white dark:bg-gray-800 shadow-2xl flex flex-col">
+                  <article className="flex flex-col p-6 bg-white shadow-2xl dark:bg-gray-800">
                     <header>
-                      <h3 className="h4 font-red-hat-display mb-1">
-                        <a href="#0">1M Customers</a>
+                      <h3 className="mb-1 h4 font-red-hat-display">
+                        <Link href="#0" passHref>
+                          <a>1M Customers</a>
+                        </Link>
                       </h3>
                     </header>
-                    <div className="text-gray-600 dark:text-gray-400 flex-grow">
+                    <div className="flex-grow text-gray-600 dark:text-gray-400">
                       <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt.
                       </p>
                     </div>
-                    <a
-                      className="inline-flex items-center font-medium text-teal-500 hover:underline mt-2"
-                      href="#0"
-                    >
+                    <a className="inline-flex items-center mt-2 font-medium text-teal-500 hover:underline">
                       <span>Learn more</span>
                       <svg
-                        className="w-3 h-3 flex-shrink-0 mt-px ml-2"
+                        className="flex-shrink-0 w-3 h-3 mt-px ml-2"
                         viewBox="0 0 12 12"
                         xmlns="http://www.w3.org/2000/svg"
                       >

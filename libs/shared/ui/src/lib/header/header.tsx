@@ -68,43 +68,45 @@ export function Header(props: HeaderProps) {
           {/* Site branding */}
           <div className="flex-shrink-0 mr-5">
             {/* Logo */}
-            <Link to="/" className="block" aria-label="Cruip">
-              <svg
-                className="w-8 h-8"
-                viewBox="0 0 32 32"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <defs>
-                  <linearGradient
-                    x1="26%"
-                    y1="100%"
-                    x2="100%"
-                    y2="100%"
-                    id="logo_a"
-                  >
-                    <stop stopColor="#3ABAB4" offset="0%" />
-                    <stop stopColor="#7F9CF5" offset="100%" />
-                  </linearGradient>
-                  <linearGradient
-                    x1="26%"
-                    y1="100%"
-                    x2="100%"
-                    y2="100%"
-                    id="logo_b"
-                  >
-                    <stop stopColor="#3ABAB4" offset="0%" />
-                    <stop stopColor="#3ABAB4" stopOpacity="0" offset="100%" />
-                  </linearGradient>
-                </defs>
-                <path
-                  d="M32 16h-8a8 8 0 10-16 0H0C0 7.163 7.163 0 16 0s16 7.163 16 16z"
-                  fill="url(#logo_a)"
-                />
-                <path
-                  d="M32 16c0 8.837-7.163 16-16 16S0 24.837 0 16h8a8 8 0 1016 0h8z"
-                  fill="url(#logo_b)"
-                />
-              </svg>
+            <Link href="/" passHref aria-label="Cruip">
+              <a className="block">
+                <svg
+                  className="w-8 h-8"
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <defs>
+                    <linearGradient
+                      x1="26%"
+                      y1="100%"
+                      x2="100%"
+                      y2="100%"
+                      id="logo_a"
+                    >
+                      <stop stopColor="#3ABAB4" offset="0%" />
+                      <stop stopColor="#7F9CF5" offset="100%" />
+                    </linearGradient>
+                    <linearGradient
+                      x1="26%"
+                      y1="100%"
+                      x2="100%"
+                      y2="100%"
+                      id="logo_b"
+                    >
+                      <stop stopColor="#3ABAB4" offset="0%" />
+                      <stop stopColor="#3ABAB4" stopOpacity="0" offset="100%" />
+                    </linearGradient>
+                  </defs>
+                  <path
+                    d="M32 16h-8a8 8 0 10-16 0H0C0 7.163 7.163 0 16 0s16 7.163 16 16z"
+                    fill="url(#logo_a)"
+                  />
+                  <path
+                    d="M32 16c0 8.837-7.163 16-16 16S0 24.837 0 16h8a8 8 0 1016 0h8z"
+                    fill="url(#logo_b)"
+                  />
+                </svg>
+              </a>
             </Link>
           </div>
 
@@ -113,46 +115,41 @@ export function Header(props: HeaderProps) {
             {/* Desktop menu links */}
             <ul className="flex flex-wrap items-center flex-grow font-medium">
               <li>
-                <Link
-                  to="/about"
-                  className="flex items-center px-5 py-2 text-gray-600 transition duration-150 ease-in-out hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100"
-                >
-                  About
+                <Link href="/about" passHref>
+                  <a className="flex items-center px-5 py-2 text-gray-600 transition duration-150 ease-in-out hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100">
+                    About
+                  </a>
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/blog"
-                  className="flex items-center px-5 py-2 text-gray-600 transition duration-150 ease-in-out hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100"
-                >
-                  Blog
+                <Link href="/blog" passHref>
+                  <a className="flex items-center px-5 py-2 text-gray-600 transition duration-150 ease-in-out hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100">
+                    Blog
+                  </a>
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/testimonials"
-                  className="flex items-center px-5 py-2 text-gray-600 transition duration-150 ease-in-out hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100"
-                >
-                  Testimonials
+                <Link href="/testimonials" passHref>
+                  <a className="flex items-center px-5 py-2 text-gray-600 transition duration-150 ease-in-out hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100">
+                    Testimonials
+                  </a>
                 </Link>
               </li>
               {/* 1st level: hover */}
               <Dropdown title="Resources">
                 {/* 2nd level: hover */}
                 <li>
-                  <Link
-                    to="/help"
-                    className="flex px-4 py-2 text-sm leading-tight text-gray-600 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-500"
-                  >
-                    Help center
+                  <Link href="/help" passHref>
+                    <a className="flex px-4 py-2 text-sm leading-tight text-gray-600 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-500">
+                      Help center
+                    </a>
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    to="/404"
-                    className="flex px-4 py-2 text-sm leading-tight text-gray-600 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-500"
-                  >
-                    404
+                  <Link href="/404" passHref>
+                    <a className="flex px-4 py-2 text-sm leading-tight text-gray-600 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-500">
+                      404
+                    </a>
                   </Link>
                 </li>
               </Dropdown>
@@ -198,11 +195,10 @@ export function Header(props: HeaderProps) {
             {/* Desktop CTA on the right */}
             <ul className="flex flex-wrap items-center justify-end">
               <li>
-                <Link
-                  to="/contact"
-                  className="ml-6 text-white bg-teal-500 btn-sm hover:bg-teal-400"
-                >
-                  Request code
+                <Link href="/contact" passHref>
+                  <a className="ml-6 text-white bg-teal-500 btn-sm hover:bg-teal-400">
+                    Request code
+                  </a>
                 </Link>
               </li>
             </ul>
@@ -329,27 +325,24 @@ export function Header(props: HeaderProps) {
                   {/* Links */}
                   <ul>
                     <li>
-                      <Link
-                        to="/about"
-                        className="flex py-2 text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100"
-                      >
-                        About
+                      <Link href="/about" passHref>
+                        <a className="flex py-2 text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100">
+                          About
+                        </a>
                       </Link>
                     </li>
                     <li>
-                      <Link
-                        to="/blog"
-                        className="flex py-2 text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100"
-                      >
-                        Blog
+                      <Link href="/blog" passHref>
+                        <a className="flex py-2 text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100">
+                          Blog
+                        </a>
                       </Link>
                     </li>
                     <li>
-                      <Link
-                        to="/testimonials"
-                        className="flex py-2 text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100"
-                      >
-                        Testimonials
+                      <Link href="/testimonials" passHref>
+                        <a className="flex py-2 text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100">
+                          Testimonials
+                        </a>
                       </Link>
                     </li>
                     <li className="py-2 my-2 border-t border-b border-gray-200 dark:border-gray-800">
@@ -358,29 +351,26 @@ export function Header(props: HeaderProps) {
                       </span>
                       <ul className="pl-4">
                         <li>
-                          <Link
-                            to="/help"
-                            className="flex py-2 text-sm font-medium text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100"
-                          >
-                            Help center
+                          <Link href="/help" passHref>
+                            <a className="flex py-2 text-sm font-medium text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100">
+                              Help center
+                            </a>
                           </Link>
                         </li>
                         <li>
-                          <Link
-                            to="/404"
-                            className="flex py-2 text-sm font-medium text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100"
-                          >
-                            404
+                          <Link href="/404" passHref>
+                            <a className="flex py-2 text-sm font-medium text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100">
+                              404
+                            </a>
                           </Link>
                         </li>
                       </ul>
                     </li>
                     <li>
-                      <Link
-                        to="/contact"
-                        className="inline-flex items-center justify-center w-full px-4 py-2 my-2 font-medium text-white transition duration-150 ease-in-out bg-teal-500 border border-transparent rounded hover:bg-teal-400"
-                      >
-                        Request code
+                      <Link href="/contact" passHref>
+                        <a className="inline-flex items-center justify-center w-full px-4 py-2 my-2 font-medium text-white transition duration-150 ease-in-out bg-teal-500 border border-transparent rounded hover:bg-teal-400">
+                          Request code
+                        </a>
                       </Link>
                     </li>
                   </ul>

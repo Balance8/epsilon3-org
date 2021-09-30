@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Modal from '../utils/Modal';
 
-import VideoTestimonial from '../assets/video-testimonial.jpg';
+import VideoTestimonialAsset from '../assets/video-testimonial.jpg';
 
 import './video-testimonial.module.css';
 
@@ -19,7 +19,7 @@ export function VideoTestimonial(props: VideoTestimonialProps) {
           <div className="text-center" data-aos="fade-down">
             <div className="relative inline-flex items-center justify-center">
               <img
-                src={VideoTestimonial}
+                src={VideoTestimonialAsset}
                 width="1024"
                 height="576"
                 alt="Video testimonial"
