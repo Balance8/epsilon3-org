@@ -15,13 +15,16 @@ export function BlogSingle(props: BlogSingleProps) {
     <section className="relative">
       {/* Background image */}
       <div className="box-content absolute inset-0 pt-16 h-128">
-        <Image
-          className="absolute inset-0 object-cover w-full h-full opacity-25"
-          src={HeroBg}
-          width="1440"
-          height="577"
-          alt="About"
-        />
+        <div className="absolute inset-0 object-cover w-full h-full opacity-25">
+          <Image
+            className="object-cover"
+            src={HeroBg}
+            width="1440"
+            height="577"
+            alt="About"
+            layout="fill"
+          />
+        </div>
         <div
           className="absolute inset-0 bg-gradient-to-t from-white dark:from-gray-900"
           aria-hidden="true"
@@ -61,7 +64,7 @@ export function BlogSingle(props: BlogSingleProps) {
                     data-aos-delay="300"
                   >
                     <Link href="#0" passHref>
-                      <a>
+                      <a className="flex-shrink-0 mr-3 rounded-full">
                         <Image
                           className="flex-shrink-0 mr-3 rounded-full"
                           src={NewsAuthor01}

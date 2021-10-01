@@ -12,13 +12,16 @@ export function HeroTestimonials(props: HeroTestimonialsProps) {
     <section className="relative">
       {/* Background image */}
       <div className="box-content absolute inset-0 pt-16 h-128 -z-1">
-        <Image
-          className="absolute inset-0 object-cover w-full h-full opacity-25"
-          src={HeroBg02}
-          width="1440"
-          height="577"
-          alt="Testimonials"
-        />
+        <div className="absolute inset-0 object-cover w-full h-full opacity-25">
+          <Image
+            className="object-cover"
+            src={HeroBg02}
+            width="1440"
+            height="577"
+            alt="Testimonials"
+            layout="fill"
+          />
+        </div>
         <div
           className="absolute inset-0 bg-gradient-to-t from-white dark:from-gray-900"
           aria-hidden="true"

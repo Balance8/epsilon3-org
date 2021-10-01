@@ -30,13 +30,16 @@ export function RelatedPosts(props: RelatedPostsProps) {
                 data-aos-anchor="[data-aos-id-relposts]"
               >
                 <figure>
-                  <Image
-                    className="absolute inset-0 object-cover w-full h-full transition duration-700 ease-out opacity-50 group-hover:opacity-75"
-                    src={RelatedPost01}
-                    width="372"
-                    height="182"
-                    alt="Related post 01"
-                  />
+                  <div className="absolute inset-0 object-cover w-full h-full transition duration-700 ease-out opacity-50 group-hover:opacity-75">
+                    <Image
+                      className="object-cover"
+                      src={RelatedPost01}
+                      width="372"
+                      height="182"
+                      alt="Related post 01"
+                      layout="fill"
+                    />
+                  </div>
                   <div
                     className="absolute inset-0 transition duration-700 ease-out bg-teal-500 opacity-75 group-hover:opacity-50"
                     aria-hidden="true"
@@ -57,7 +60,7 @@ export function RelatedPosts(props: RelatedPostsProps) {
                     {/* Author meta */}
                     <div className="flex items-center mt-5 text-sm">
                       <Link href="#0" passHref>
-                        <a>
+                        <a className="flex-shrink-0 mr-3 rounded-full">
                           <Image
                             className="flex-shrink-0 mr-3 rounded-full"
                             src={NewsAuthor04}
@@ -86,13 +89,16 @@ export function RelatedPosts(props: RelatedPostsProps) {
                 data-aos-delay="200"
               >
                 <figure>
-                  <Image
-                    className="absolute inset-0 object-cover w-full h-full transition duration-700 ease-out opacity-50 group-hover:opacity-75"
-                    src={RelatedPost02}
-                    width="372"
-                    height="182"
-                    alt="Related post 02"
-                  />
+                  <div className="absolute inset-0 object-cover w-full h-full transition duration-700 ease-out opacity-50 group-hover:opacity-75">
+                    <Image
+                      className="object-cover"
+                      src={RelatedPost02}
+                      width="372"
+                      height="182"
+                      alt="Related post 02"
+                      layout="fill"
+                    />
+                  </div>
                   <div
                     className="absolute inset-0 transition duration-700 ease-out bg-purple-500 opacity-75 group-hover:opacity-50"
                     aria-hidden="true"
@@ -114,7 +120,7 @@ export function RelatedPosts(props: RelatedPostsProps) {
                     {/* Author meta */}
                     <div className="flex items-center mt-5 text-sm">
                       <Link href="#0" passHref>
-                        <a>
+                        <a className="flex-shrink-0 mr-3 rounded-full">
                           <Image
                             className="flex-shrink-0 mr-3 rounded-full"
                             src={NewsAuthor03}
