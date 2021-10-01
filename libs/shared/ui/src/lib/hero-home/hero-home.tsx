@@ -151,23 +151,28 @@ export function HeroHome(props: HeroHomeProps) {
                   </defs>
                 </svg>
                 {/* Image inside mockup size: 290x624px (or 580x1248px for Retina devices) */}
-                <Image
-                  className="absolute"
-                  src={MockupImage01}
-                  width="290"
-                  height="624"
-                  css={{ maxWidth: '84.33%' }}
-                  alt="Features illustration"
-                />
+
                 {/* iPhone mockup */}
-                <Image
-                  className="relative h-auto max-w-full mx-auto pointer-events-none md:mr-0 md:max-w-none"
-                  src={iPhoneMockup}
-                  width="344"
-                  height="674"
-                  alt="iPhone mockup"
-                  aria-hidden="true"
-                />
+
+                <div className="absolute max-w-[84.33%]">
+                  <Image
+                    className=""
+                    src={MockupImage01}
+                    width="290"
+                    height="624"
+                    alt="Features illustration"
+                  />
+                </div>
+                <div className="relative h-auto max-w-full mx-auto pointer-events-none md:mr-0 md:max-w-none">
+                  <Image
+                    className=""
+                    src={iPhoneMockup}
+                    width="344"
+                    height="674"
+                    alt="iPhone mockup"
+                  />
+                </div>
+
                 {/* Play button */}
                 <a
                   className="absolute group"

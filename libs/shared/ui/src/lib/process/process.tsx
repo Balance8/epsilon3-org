@@ -101,23 +101,26 @@ export function Process(props: ProcessProps) {
               {/* Mobile mockup */}
               <div className="relative inline-flex items-center justify-center">
                 {/* Image inside mockup size: 290x624px (or 580x1248px for Retina devices) */}
-                <Image
-                  className="absolute"
-                  src={MockupImage02}
-                  width="290"
-                  height="624"
-                  css={{ maxWidth: '84.33%' }}
-                  alt="App screen 02"
-                />
+                <div className="absolute max-w-[84.33%]">
+                  <Image
+                    className=""
+                    src={MockupImage02}
+                    width="290"
+                    height="624"
+                    alt="App screen 02"
+                  />
+                </div>
                 {/* iPhone mockup */}
-                <Image
-                  className="relative h-auto max-w-full mx-auto pointer-events-none"
-                  src={IphoneMockup}
-                  width="344"
-                  height="674"
-                  alt="iPhone mockup"
-                  aria-hidden="true"
-                />
+                <div className="relative h-auto max-w-full mx-auto pointer-events-none">
+                  <Image
+                    className=""
+                    src={IphoneMockup}
+                    width="344"
+                    height="674"
+                    alt="iPhone mockup"
+                    aria-hidden="true"
+                  />
+                </div>
               </div>
             </div>
 
@@ -142,23 +145,26 @@ export function Process(props: ProcessProps) {
               {/* Mobile mockup */}
               <div className="relative inline-flex items-center justify-center">
                 {/* Image inside mockup size: 290x624px (or 580x1248px for Retina devices) */}
-                <Image
-                  className="absolute"
-                  src={MockupImage03}
-                  width="290"
-                  height="624"
-                  css={{ maxWidth: '84.33%' }}
-                  alt="App screen 03"
-                />
+                <div className="absolute max-w-[84.33%]">
+                  <Image
+                    className=""
+                    src={MockupImage03}
+                    width="290"
+                    height="624"
+                    alt="App screen 03"
+                  />
+                </div>
                 {/* iPhone mockup */}
-                <Image
-                  className="relative h-auto max-w-full mx-auto pointer-events-none"
-                  src={IphoneMockup}
-                  width="344"
-                  height="674"
-                  alt="iPhone mockup"
-                  aria-hidden="true"
-                />
+                <div className="relative h-auto max-w-full mx-auto pointer-events-none">
+                  <Image
+                    className=""
+                    src={IphoneMockup}
+                    width="344"
+                    height="674"
+                    alt="iPhone mockup"
+                    aria-hidden="true"
+                  />
+                </div>
               </div>
             </div>
 
@@ -170,23 +176,26 @@ export function Process(props: ProcessProps) {
               {/* Mobile mockup */}
               <div className="relative inline-flex items-center justify-center">
                 {/* Image inside mockup size: 290x624px (or 580x1248px for Retina devices) */}
-                <Image
-                  className="absolute"
-                  src={MockupImage04}
-                  width="290"
-                  height="624"
-                  css={{ maxWidth: '84.33%' }}
-                  alt="App screen 04"
-                />
+                <div className="absolute max-w-[84.33%]">
+                  <Image
+                    className=""
+                    src={MockupImage04}
+                    width="290"
+                    height="624"
+                    alt="App screen 04"
+                  />
+                </div>
                 {/* iPhone mockup */}
-                <Image
-                  className="relative h-auto max-w-full mx-auto pointer-events-none"
-                  src={IphoneMockup}
-                  width="344"
-                  height="674"
-                  alt="iPhone mockup"
-                  aria-hidden="true"
-                />
+                <div className="relative h-auto max-w-full mx-auto pointer-events-none">
+                  <Image
+                    className=""
+                    src={IphoneMockup}
+                    width="344"
+                    height="674"
+                    alt="iPhone mockup"
+                    aria-hidden="true"
+                  />
+                </div>
               </div>
             </div>
           </div>

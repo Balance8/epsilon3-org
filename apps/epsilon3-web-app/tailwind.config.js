@@ -125,8 +125,13 @@ module.exports = {
       },
       animation: {
         float: 'float 5s ease-in-out infinite',
+        'tags-animation': 'tagsmove 30s linear infinite ',
       },
       keyframes: {
+        tagsmove: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(768px)' },
+        },
         float: {
           '0%, 100%': { transform: 'translateY(0)' },
           '50%': { transform: 'translateY(-10%)' },
