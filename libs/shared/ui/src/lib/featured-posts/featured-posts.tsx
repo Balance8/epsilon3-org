@@ -27,13 +27,16 @@ export function FeaturedPosts(props: FeaturedPostsProps) {
               data-aos-delay="100"
             >
               <figure>
-                <Image
-                  className="absolute inset-0 object-cover w-full h-full transition duration-700 ease-out opacity-50 group-hover:opacity-75"
-                  src={RelatedPost03}
-                  width="258"
-                  height="154"
-                  alt="Related post 03"
-                />
+                <div className="absolute inset-0 object-cover w-full h-full transition duration-700 ease-out opacity-50 group-hover:opacity-75">
+                  <Image
+                    className="object-cover"
+                    src={RelatedPost03}
+                    width="258"
+                    height="154"
+                    alt="Related post 03"
+                    layout="fill"
+                  />
+                </div>
                 <div
                   className="absolute inset-0 transition duration-700 ease-out bg-teal-500 opacity-75 group-hover:opacity-50"
                   aria-hidden="true"
@@ -65,13 +68,16 @@ export function FeaturedPosts(props: FeaturedPostsProps) {
               data-aos-delay="200"
             >
               <figure>
-                <Image
-                  className="absolute inset-0 object-cover w-full h-full transition duration-700 ease-out opacity-50 group-hover:opacity-75"
-                  src={RelatedPost04}
-                  width="258"
-                  height="154"
-                  alt="Related post 04"
-                />
+                <div className="absolute inset-0 object-cover w-full h-full transition duration-700 ease-out opacity-50 group-hover:opacity-75">
+                  <Image
+                    className="object-cover"
+                    src={RelatedPost04}
+                    width="258"
+                    height="154"
+                    alt="Related post 04"
+                    layout="fill"
+                  />
+                </div>
                 <div
                   className="absolute inset-0 transition duration-700 ease-out bg-purple-500 opacity-75 group-hover:opacity-50"
                   aria-hidden="true"
@@ -103,13 +109,16 @@ export function FeaturedPosts(props: FeaturedPostsProps) {
               data-aos-delay="300"
             >
               <figure>
-                <Image
-                  className="absolute inset-0 object-cover w-full h-full transition duration-700 ease-out opacity-50 group-hover:opacity-75"
-                  src={RelatedPost05}
-                  width="258"
-                  height="154"
-                  alt="Related post 05"
-                />
+                <div className="absolute inset-0 object-cover w-full h-full transition duration-700 ease-out opacity-50 group-hover:opacity-75">
+                  <Image
+                    className="object-cover"
+                    src={RelatedPost05}
+                    width="258"
+                    height="154"
+                    alt="Related post 05"
+                    layout="fill"
+                  />
+                </div>
                 <div
                   className="absolute inset-0 transition duration-700 ease-out bg-indigo-500 opacity-75 group-hover:opacity-50"
                   aria-hidden="true"
@@ -141,13 +150,16 @@ export function FeaturedPosts(props: FeaturedPostsProps) {
               data-aos-delay="400"
             >
               <figure>
-                <Image
-                  className="absolute inset-0 object-cover w-full h-full transition duration-700 ease-out opacity-50 group-hover:opacity-75"
-                  src={RelatedPost06}
-                  width="258"
-                  height="154"
-                  alt="Related post 06"
-                />
+                <div className="absolute inset-0 object-cover w-full h-full transition duration-700 ease-out opacity-50 group-hover:opacity-75">
+                  <Image
+                    className="object-cover"
+                    src={RelatedPost06}
+                    width="258"
+                    height="154"
+                    alt="Related post 06"
+                    layout="fill"
+                  />
+                </div>
                 <div
                   className="absolute inset-0 transition duration-700 ease-out bg-pink-500 opacity-75 group-hover:opacity-50"
                   aria-hidden="true"

@@ -64,7 +64,7 @@ export function BlogList(props: BlogListProps) {
                   </p>
                   <footer className="flex items-center mt-4">
                     <Link href="#0" passHref>
-                      <a>
+                      <a className="flex-shrink-0 mr-3 rounded-full">
                         <Image
                           className="flex-shrink-0 mr-3 rounded-full"
                           src={NewsAuthor03}
@@ -119,7 +119,7 @@ export function BlogList(props: BlogListProps) {
                   </p>
                   <footer className="flex items-center mt-4">
                     <Link href="#0" passHref>
-                      <a>
+                      <a className="flex-shrink-0 mr-3 rounded-full">
                         <Image
                           className="flex-shrink-0 mr-3 rounded-full"
                           src={NewsAuthor06}
@@ -173,7 +173,7 @@ export function BlogList(props: BlogListProps) {
                   </p>
                   <footer className="flex items-center mt-4">
                     <Link href="#0" passHref>
-                      <a>
+                      <a className="flex-shrink-0 mr-3 rounded-full">
                         <Image
                           className="flex-shrink-0 mr-3 rounded-full"
                           src={NewsAuthor01}
@@ -227,7 +227,7 @@ export function BlogList(props: BlogListProps) {
                   </p>
                   <footer className="flex items-center mt-4">
                     <Link href="#0" passHref>
-                      <a>
+                      <a className="flex-shrink-0 mr-3 rounded-full">
                         <Image
                           className="flex-shrink-0 mr-3 rounded-full"
                           src={NewsAuthor03}
@@ -281,7 +281,7 @@ export function BlogList(props: BlogListProps) {
                   </p>
                   <footer className="flex items-center mt-4">
                     <Link href="#0" passHref>
-                      <a>
+                      <a className="flex-shrink-0 mr-3 rounded-full">
                         <Image
                           className="flex-shrink-0 mr-3 rounded-full"
                           src={NewsAuthor04}
@@ -335,7 +335,7 @@ export function BlogList(props: BlogListProps) {
                   </p>
                   <footer className="flex items-center mt-4">
                     <Link href="#0" passHref>
-                      <a>
+                      <a className="flex-shrink-0 mr-3 rounded-full">
                         <Image
                           className="flex-shrink-0 mr-3 rounded-full"
                           src={NewsAuthor05}
