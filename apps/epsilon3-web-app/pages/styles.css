@@ -239,3 +239,6 @@ button:focus,
     @apply placeholder-gray-400;
   }
 }
+
+$aos-distance: 16px;
+@import 'aos/dist/aos.css';
