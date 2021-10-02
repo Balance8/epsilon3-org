@@ -76,7 +76,7 @@ export function FeaturesGallery(props: FeaturesGalleryProps) {
                   aria-hidden="true"
                 ></div>
                 <svg
-                  className="mt-3 mr-3 text-purple-500 fill-current"
+                  className="mt-5 mr-[.95rem] text-purple-500 fill-current"
                   viewBox="0 0 80 80"
                   xmlns="http://www.w3.org/2000/svg"
                 >

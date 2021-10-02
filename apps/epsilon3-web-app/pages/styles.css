@@ -5,12 +5,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-  .animation-delay-1 {
-    animation-delay: 3000ms;
-  }
-}
-
 :focus,
 button:focus,
 .btn:focus,

@@ -100,43 +100,82 @@ export function FeaturesAnimation(props: FeaturesAnimationProps) {
                 <div className="absolute inline-flex items-center justify-center px-4 py-2 font-medium text-white delay-1000 rounded-full dark:text-indigo-500 bg-gradient-to-tr from-indigo-500 to-indigo-400 dark:bg-indigo-500 dark:from-transparent dark:to-transparent dark:bg-opacity-25 animate-tags-animation mt-28">
                   Custom Support
                 </div>
-                <div className="absolute inline-flex items-center justify-center px-4 py-2 font-medium text-white rounded-full dark:text-teal-500 bg-gradient-to-tr from-teal-500 to-teal-400 dark:bg-teal-500 dark:from-transparent dark:to-transparent dark:bg-opacity-25 animate-tags-animation mt-72 ">
+                <div
+                  style={{ animationDelay: `${30000 * -0.1}ms` }}
+                  className="absolute inline-flex items-center justify-center px-4 py-2 font-medium text-white rounded-full dark:text-teal-500 bg-gradient-to-tr from-teal-500 to-teal-400 dark:bg-teal-500 dark:from-transparent dark:to-transparent dark:bg-opacity-25 animate-tags-animation mt-72 "
+                >
                   Components
                 </div>
-                <div className="absolute inline-flex items-center justify-center px-4 py-2 mt-40 font-medium text-white delay-[30000*-0.16] rounded-full dark:text-pink-500 bg-gradient-to-tr from-pink-500 to-pink-400 dark:bg-pink-500 dark:from-transparent dark:to-transparent dark:bg-opacity-25 animate-tags-animation tags-2">
+                <div
+                  style={{ animationDelay: `${30000 * -0.16}ms` }}
+                  className="absolute inline-flex items-center justify-center px-4 py-2 mt-40 font-medium text-white rounded-full dark:text-pink-500 bg-gradient-to-tr from-pink-500 to-pink-400 dark:bg-pink-500 dark:from-transparent dark:to-transparent dark:bg-opacity-25 animate-tags-animation "
+                >
                   Items
                 </div>
-                <div className="absolute inline-flex items-center justify-center px-4 py-2 font-medium text-white delay-[30000*-0.23] rounded-full dark:text-indigo-500 bg-gradient-to-tr from-indigo-500 to-indigo-400 dark:bg-indigo-500 dark:from-transparent dark:to-transparent dark:bg-opacity-25 animate-tags-animation tags-3 mt-80 top-4">
+                <div
+                  style={{ animationDelay: `${30000 * -0.23}ms` }}
+                  className="absolute inline-flex items-center justify-center px-4 py-2 font-medium text-white rounded-full dark:text-indigo-500 bg-gradient-to-tr from-indigo-500 to-indigo-400 dark:bg-indigo-500 dark:from-transparent dark:to-transparent dark:bg-opacity-25 animate-tags-animation mt-80 top-4"
+                >
                   Tools
                 </div>
-                <div className="absolute inline-flex items-center justify-center px-4 py-2 mt-56 font-medium text-white delay-[30000*-0.27] rounded-full dark:text-indigo-500 bg-gradient-to-tr from-indigo-500 to-indigo-400 dark:bg-indigo-500 dark:from-transparent dark:to-transparent dark:bg-opacity-25 animate-tags-animation ">
+                <div
+                  style={{ animationDelay: `${30000 * -0.27}ms` }}
+                  className="absolute inline-flex items-center justify-center px-4 py-2 mt-56 font-medium text-white delay-[30000*-0.27] rounded-full dark:text-indigo-500 bg-gradient-to-tr from-indigo-500 to-indigo-400 dark:bg-indigo-500 dark:from-transparent dark:to-transparent dark:bg-opacity-25 animate-tags-animation "
+                >
                   Development
                 </div>
-                <div className="absolute inline-flex items-center justify-center px-4 py-2 font-medium text-white rounded-full delay-[30000*-0.44] dark:text-pink-500 bg-gradient-to-tr from-pink-500 to-pink-400 dark:bg-pink-500 dark:from-transparent dark:to-transparent dark:bg-opacity-25 animate-tags-animation ">
+                <div
+                  style={{ animationDelay: `${30000 * -0.27}ms` }}
+                  className="absolute inline-flex items-center justify-center px-4 py-2 font-medium text-white rounded-full delay-[30000*-0.44] dark:text-pink-500 bg-gradient-to-tr from-pink-500 to-pink-400 dark:bg-pink-500 dark:from-transparent dark:to-transparent dark:bg-opacity-25 animate-tags-animation "
+                >
                   Project Settings
                 </div>
-                <div className="absolute inline-flex items-center justify-center px-4 py-2 font-medium text-white delay-[30000*-0.55] rounded-full dark:text-teal-500 bg-gradient-to-tr from-teal-500 to-teal-400 dark:bg-teal-500 dark:from-transparent dark:to-transparent dark:bg-opacity-25 animate-tags-animation mt-14">
+                <div
+                  style={{ animationDelay: `${30000 * -0.44}ms` }}
+                  className="absolute inline-flex items-center justify-center px-4 py-2 font-medium text-white delay-[30000*-0.55] rounded-full dark:text-teal-500 bg-gradient-to-tr from-teal-500 to-teal-400 dark:bg-teal-500 dark:from-transparent dark:to-transparent dark:bg-opacity-25 animate-tags-animation mt-14"
+                >
                   Tools & Widgets
                 </div>
-                <div className="absolute inline-flex items-center justify-center px-4 py-2 font-medium text-white rounded-full delay-[30000*-0.63] dark:text-purple-500 bg-gradient-to-tr from-purple-500 to-purple-400 dark:bg-purple-500 dark:from-transparent dark:to-transparent dark:bg-opacity-25 animate-tags-animation mt-80 top-4">
+                <div
+                  style={{ animationDelay: `${30000 * -0.44}ms` }}
+                  className="absolute inline-flex items-center justify-center px-4 py-2 font-medium text-white rounded-full delay-[30000*-0.63] dark:text-purple-500 bg-gradient-to-tr from-purple-500 to-purple-400 dark:bg-purple-500 dark:from-transparent dark:to-transparent dark:bg-opacity-25 animate-tags-animation mt-80 top-4"
+                >
                   Getting Started
                 </div>
-                <div className="absolute inline-flex items-center justify-center px-4 py-2 mt-40 font-medium text-white delay-[30000*-0.73] rounded-full dark:text-indigo-500 bg-gradient-to-tr from-indigo-500 to-indigo-400 dark:bg-indigo-500 dark:from-transparent dark:to-transparent dark:bg-opacity-25 animate-tags-animation ">
+                <div
+                  style={{ animationDelay: `${30000 * -0.55}ms` }}
+                  className="absolute inline-flex items-center justify-center px-4 py-2 mt-40 font-medium text-white delay-[30000*-0.73] rounded-full dark:text-indigo-500 bg-gradient-to-tr from-indigo-500 to-indigo-400 dark:bg-indigo-500 dark:from-transparent dark:to-transparent dark:bg-opacity-25 animate-tags-animation "
+                >
                   Templates
                 </div>
-                <div className="absolute inline-flex items-center justify-center px-4 py-2 font-medium text-white rounded-full delay-[30000*-0.76] dark:text-indigo-500 bg-gradient-to-tr from-indigo-500 to-indigo-400 dark:bg-indigo-500 dark:from-transparent dark:to-transparent dark:bg-opacity-25 animate-tags-animation ">
+                <div
+                  style={{ animationDelay: `${30000 * -0.63}ms` }}
+                  className="absolute inline-flex items-center justify-center px-4 py-2 font-medium text-white rounded-full delay-[30000*-0.76] dark:text-indigo-500 bg-gradient-to-tr from-indigo-500 to-indigo-400 dark:bg-indigo-500 dark:from-transparent dark:to-transparent dark:bg-opacity-25 animate-tags-animation "
+                >
                   Frameworks
                 </div>
-                <div className="absolute inline-flex items-center justify-center px-4 py-2 font-medium text-white delay-[30000*-0.8] rounded-full dark:text-pink-500 bg-gradient-to-tr from-pink-500 to-pink-400 dark:bg-pink-500 dark:from-transparent dark:to-transparent dark:bg-opacity-25 animate-tags-animation mt-72">
+                <div
+                  style={{ animationDelay: `${30000 * -0.63}ms` }}
+                  className="absolute inline-flex items-center justify-center px-4 py-2 font-medium text-white delay-[30000*-0.8] rounded-full dark:text-pink-500 bg-gradient-to-tr from-pink-500 to-pink-400 dark:bg-pink-500 dark:from-transparent dark:to-transparent dark:bg-opacity-25 animate-tags-animation mt-72"
+                >
                   Custom UI
                 </div>
-                <div className="absolute inline-flex items-center justify-center px-4 py-2 font-medium text-white delay-[30000*-0.63] rounded-full dark:text-purple-500 bg-gradient-to-tr from-purple-500 to-purple-400 dark:bg-purple-500 dark:from-transparent dark:to-transparent dark:bg-opacity-25 animate-tags-animation mt-28">
+                <div
+                  style={{ animationDelay: `${30000 * -0.73}ms` }}
+                  className="absolute inline-flex items-center justify-center px-4 py-2 font-medium text-white delay-[30000*-0.63] rounded-full dark:text-purple-500 bg-gradient-to-tr from-purple-500 to-purple-400 dark:bg-purple-500 dark:from-transparent dark:to-transparent dark:bg-opacity-25 animate-tags-animation mt-28"
+                >
                   Layout & Design
                 </div>
-                <div className="absolute inline-flex items-center justify-center px-4 py-2 font-medium text-white delay-[30000*-0.44] rounded-full dark:text-teal-500 bg-gradient-to-tr from-teal-500 to-teal-400 dark:bg-teal-500 dark:from-transparent dark:to-transparent dark:bg-opacity-25 animate-tags-animation mt-80 top-4">
+                <div
+                  style={{ animationDelay: `${30000 * -0.76}ms` }}
+                  className="absolute inline-flex items-center justify-center px-4 py-2 font-medium text-white delay-[30000*-0.44] rounded-full dark:text-teal-500 bg-gradient-to-tr from-teal-500 to-teal-400 dark:bg-teal-500 dark:from-transparent dark:to-transparent dark:bg-opacity-25 animate-tags-animation mt-80 top-4"
+                >
                   Perks
                 </div>
-                <div className="absolute inline-flex items-center justify-center px-4 py-2 mt-56 font-medium text-white delay-[30000*-0.1] rounded-full dark:text-teal-500 bg-gradient-to-tr from-teal-500 to-teal-400 dark:bg-teal-500 dark:from-transparent dark:to-transparent dark:bg-opacity-25 animate-tags-animation">
+                <div
+                  style={{ animationDelay: `${30000 * -0.8}ms` }}
+                  className="absolute inline-flex items-center justify-center px-4 py-2 mt-56 font-medium text-white delay-[30000*-0.1] rounded-full dark:text-teal-500 bg-gradient-to-tr from-teal-500 to-teal-400 dark:bg-teal-500 dark:from-transparent dark:to-transparent dark:bg-opacity-25 animate-tags-animation"
+                >
                   Product & Design
                 </div>
               </div>
