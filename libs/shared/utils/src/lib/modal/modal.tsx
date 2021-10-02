@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import './modal.module.css';
 
 import React, { useEffect, useRef } from 'react';

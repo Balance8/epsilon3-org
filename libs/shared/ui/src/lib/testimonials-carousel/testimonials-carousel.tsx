@@ -1,3 +1,4 @@
+// @ts-nocheck
 import './testimonials-carousel.module.css';
 
 import { useState, useRef, useEffect } from 'react';

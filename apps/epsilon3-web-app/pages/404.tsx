@@ -1,3 +1,7 @@
+// eslint-disable ban-ts-comment
+
+// @ts-nocheck
+
 import { PageIllustration } from '@epsilon3-org/shared/ui';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -39,10 +43,7 @@ export function PageNotFound(props: PageNotFoundProps) {
                     Hm, the page you were looking for doesn't exist anymore.
                   </h1>
                   <Link passHref href="/">
-                    <a
-                      className="inline-flex items-center text-white bg-teal-500 btn hover:bg-teal-400"
-                      href="/"
-                    >
+                    <a className="inline-flex items-center text-white bg-teal-500 btn hover:bg-teal-400">
                       <span>Back to Appy</span>
                       <svg
                         className="flex-shrink-0 w-3 h-3 mt-px ml-2"
