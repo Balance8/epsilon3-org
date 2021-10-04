@@ -52,7 +52,7 @@ Start the project
 
 
 ## Pure React
-![App Screenshot](https://i.imgur.com/z1jM7dI.png)
+![App Screenshot](https://i.imgur.com/fmQ7DXa.png)
 
 
 
