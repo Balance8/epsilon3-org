@@ -6,6 +6,10 @@ I wanted to illuminate the pros and cons of each and show where I believe the Ne
 
 You can find the code for the pure React App here: https://github.com/Balance8/appy-react
 
+Live Site (Next.js) - https://epsilon3-org.vercel.app/
+
+Pure React Live Site - https://preview.cruip.com/appy/index.html
+
 
 
 ## Run Locally
